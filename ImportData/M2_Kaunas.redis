@@ -1,0 +1,790 @@
+HSET inventorius:1 inventorius_id 1 pavadinimas "didelė lėkštė" kiekis 30 restoranas_id 1
+HSET inventorius:2 inventorius_id 2 pavadinimas "didelė lėkštė" kiekis 28 restoranas_id 2
+HSET inventorius:3 inventorius_id 3 pavadinimas "padažo indelis" kiekis 12 restoranas_id 1
+HSET inventorius:4 inventorius_id 4 pavadinimas "padažo indelis" kiekis 10 restoranas_id 2
+HSET inventorius:5 inventorius_id 5 pavadinimas peilis kiekis 37 restoranas_id 1
+HSET inventorius:6 inventorius_id 6 pavadinimas peilis kiekis 34 restoranas_id 2
+HSET inventorius:7 inventorius_id 7 pavadinimas "folija, m" kiekis 300 restoranas_id 1
+HSET inventorius:8 inventorius_id 8 pavadinimas "folija, m" kiekis 274 restoranas_id 2
+HSET inventorius:9 inventorius_id 9 pavadinimas "pjaustymo lentelė" kiekis 8 restoranas_id 1
+HSET inventorius:10 inventorius_id 10 pavadinimas "pjaustymo lentelė" kiekis 7 restoranas_id 2
+HSET inventorius:11 inventorius_id 11 pavadinimas "rankų muilas" kiekis 6 restoranas_id 1
+HSET inventorius:12 inventorius_id 12 pavadinimas "indų ploviklis" kiekis 7 restoranas_id 2
+HSET inventorius:13 inventorius_id 13 pavadinimas šaukštas kiekis 42 restoranas_id 17
+HSET inventorius:15 inventorius_id 15 pavadinimas puodelis kiekis 27 restoranas_id 12
+HSET inventorius:17 inventorius_id 17 pavadinimas puodas kiekis 14 restoranas_id 33
+HSET inventorius:20 inventorius_id 20 pavadinimas "vienkartinis puodelis" kiekis 200 restoranas_id 45
+HSET inventorius:21 inventorius_id 21 pavadinimas "popieriniai rankšluosčiai" kiekis 34 restoranas_id 19
+HSET inventorius:22 inventorius_id 22 pavadinimas "šiukšlių maišai" kiekis 80 restoranas_id 4
+HSET inventorius:25 inventorius_id 25 pavadinimas šluota kiekis 5 restoranas_id 13
+HSET inventorius:26 inventorius_id 26 pavadinimas semėtuvas kiekis 7 restoranas_id 13
+HSET inventorius:31 inventorius_id 31 pavadinimas "indaplovių tabletės" kiekis 90 restoranas_id 21
+HSET inventorius:32 inventorius_id 32 pavadinimas kempinėlės kiekis 40 restoranas_id 21
+HSET inventorius:33 inventorius_id 33 pavadinimas servetėlės kiekis 300 restoranas_id 7
+HSET inventorius:34 inventorius_id 34 pavadinimas "stalo žvakės" kiekis 50 restoranas_id 7
+HSET inventorius:43 inventorius_id 43 pavadinimas šaukštelis kiekis 60 restoranas_id 3
+HSET inventorius:44 inventorius_id 44 pavadinimas "šampano taurė" kiekis 24 restoranas_id 3
+HSET inventorius:45 inventorius_id 45 pavadinimas "vyno taurė" kiekis 30 restoranas_id 3
+HSET inventorius:46 inventorius_id 46 pavadinimas "vandens stiklinė" kiekis 40 restoranas_id 3
+HSET inventorius:55 inventorius_id 55 pavadinimas "kepimo popierius" kiekis 180 restoranas_id 41
+HSET inventorius:56 inventorius_id 56 pavadinimas šaukštas kiekis 55 restoranas_id 22
+HSET inventorius:59 inventorius_id 59 pavadinimas "didelė lėkštė" kiekis 32 restoranas_id 14
+HSET inventorius:61 inventorius_id 61 pavadinimas puodelis kiekis 28 restoranas_id 39
+HSET inventorius:71 inventorius_id 71 pavadinimas "popieriniai rankšluosčiai" kiekis 40 restoranas_id 29
+HSET inventorius:72 inventorius_id 72 pavadinimas "šiukšlių maišai" kiekis 90 restoranas_id 29
+HSET inventorius:73 inventorius_id 73 pavadinimas "indaplovių tabletės" kiekis 85 restoranas_id 29
+HSET inventorius:74 inventorius_id 74 pavadinimas kempinėlės kiekis 33 restoranas_id 29
+HSET inventorius:75 inventorius_id 75 pavadinimas "rankų muilas" kiekis 12 restoranas_id 29
+HSET inventorius:76 inventorius_id 76 pavadinimas "indų ploviklis" kiekis 15 restoranas_id 29
+HSET inventorius:77 inventorius_id 77 pavadinimas servetėlės kiekis 310 restoranas_id 29
+HSET inventorius:78 inventorius_id 78 pavadinimas "vienkartinė lėkštė" kiekis 150 restoranas_id 29
+HSET inventorius:79 inventorius_id 79 pavadinimas "vienkartinis puodelis" kiekis 210 restoranas_id 29
+HSET inventorius:80 inventorius_id 80 pavadinimas "vienkartiniai šiaudeliai" kiekis 190 restoranas_id 29
+HSET inventorius:81 inventorius_id 81 pavadinimas šluota kiekis 5 restoranas_id 29
+HSET inventorius:82 inventorius_id 82 pavadinimas semėtuvas kiekis 6 restoranas_id 29
+HSET inventorius:83 inventorius_id 83 pavadinimas "virtuvinės žirklės" kiekis 10 restoranas_id 29
+HSET inventorius:84 inventorius_id 84 pavadinimas "pjaustymo peilis" kiekis 13 restoranas_id 29
+HSET inventorius:85 inventorius_id 85 pavadinimas "grilio mentelė" kiekis 8 restoranas_id 29
+HSET inventorius:86 inventorius_id 86 pavadinimas "kepimo pirštinės" kiekis 12 restoranas_id 29
+HSET inventorius:87 inventorius_id 87 pavadinimas "maisto dėžutės" kiekis 55 restoranas_id 29
+HSET inventorius:88 inventorius_id 88 pavadinimas "šaldymo dėžės" kiekis 4 restoranas_id 29
+HSET inventorius:89 inventorius_id 89 pavadinimas "druska, kg" kiekis 10 restoranas_id 29
+HSET inventorius:90 inventorius_id 90 pavadinimas "cukrus, kg" kiekis 14 restoranas_id 29
+HSET inventorius:91 inventorius_id 91 pavadinimas "pipirai, kg" kiekis 3 restoranas_id 29
+HSET inventorius:92 inventorius_id 92 pavadinimas "alyva, l" kiekis 20 restoranas_id 29
+HSET inventorius:93 inventorius_id 93 pavadinimas "acto butelis" kiekis 11 restoranas_id 29
+HSET inventorius:94 inventorius_id 94 pavadinimas "kepimo grotelės" kiekis 7 restoranas_id 29
+HSET inventorius:95 inventorius_id 95 pavadinimas "grilio iešmai" kiekis 45 restoranas_id 29
+HSET inventorius:96 inventorius_id 96 pavadinimas šaukštelis kiekis 58 restoranas_id 29
+HSET inventorius:97 inventorius_id 97 pavadinimas "stalo žvakės" kiekis 40 restoranas_id 29
+HSET inventorius:98 inventorius_id 98 pavadinimas "pjaustymo lenta plastikinė" kiekis 8 restoranas_id 29
+HSET inventorius:99 inventorius_id 99 pavadinimas "pjaustymo lenta medinė" kiekis 6 restoranas_id 29
+HSET inventorius:100 inventorius_id 100 pavadinimas "virtuvinis termometras" kiekis 5 restoranas_id 29
+HSET inventorius:101 inventorius_id 101 pavadinimas "sviestinis peilis" kiekis 18 restoranas_id 29
+HSET inventorius:102 inventorius_id 102 pavadinimas "kepimo forma silikoninė" kiekis 9 restoranas_id 29
+HSET inventorius:103 inventorius_id 103 pavadinimas "kepimo forma metalinė" kiekis 7 restoranas_id 29
+HSET inventorius:105 inventorius_id 105 pavadinimas šakutė kiekis 52 restoranas_id 44
+HSET inventorius:107 inventorius_id 107 pavadinimas "didelė lėkštė" kiekis 31 restoranas_id 15
+HSET inventorius:108 inventorius_id 108 pavadinimas "maža lėkštė" kiekis 46 restoranas_id 15
+HSET inventorius:109 inventorius_id 109 pavadinimas puodelis kiekis 29 restoranas_id 15
+HSET inventorius:110 inventorius_id 110 pavadinimas stiklinė kiekis 35 restoranas_id 15
+HSET inventorius:111 inventorius_id 111 pavadinimas "vyno taurė" kiekis 20 restoranas_id 15
+HSET inventorius:112 inventorius_id 112 pavadinimas "šampano taurė" kiekis 16 restoranas_id 15
+HSET inventorius:113 inventorius_id 113 pavadinimas "pjaustymo lentelė" kiekis 10 restoranas_id 15
+HSET inventorius:114 inventorius_id 114 pavadinimas "virtuvinis peilis" kiekis 12 restoranas_id 15
+HSET inventorius:115 inventorius_id 115 pavadinimas "grilio žnyplės" kiekis 9 restoranas_id 15
+HSET inventorius:116 inventorius_id 116 pavadinimas "kepimo forma" kiekis 6 restoranas_id 15
+HSET inventorius:117 inventorius_id 117 pavadinimas "kepimo skarda" kiekis 5 restoranas_id 15
+HSET inventorius:118 inventorius_id 118 pavadinimas "folija, m" kiekis 240 restoranas_id 15
+HSET inventorius:119 inventorius_id 119 pavadinimas "popieriniai rankšluosčiai" kiekis 38 restoranas_id 15
+HSET inventorius:120 inventorius_id 120 pavadinimas "šiukšlių maišai" kiekis 95 restoranas_id 15
+HSET inventorius:121 inventorius_id 121 pavadinimas "indaplovių tabletės" kiekis 82 restoranas_id 15
+HSET inventorius:122 inventorius_id 122 pavadinimas kempinėlės kiekis 36 restoranas_id 15
+HSET inventorius:123 inventorius_id 123 pavadinimas "rankų muilas" kiekis 14 restoranas_id 15
+HSET inventorius:124 inventorius_id 124 pavadinimas "indų ploviklis" kiekis 16 restoranas_id 15
+HSET inventorius:125 inventorius_id 125 pavadinimas servetėlės kiekis 320 restoranas_id 15
+HSET inventorius:126 inventorius_id 126 pavadinimas "vienkartinė lėkštė" kiekis 160 restoranas_id 15
+HSET inventorius:127 inventorius_id 127 pavadinimas "vienkartinis puodelis" kiekis 220 restoranas_id 15
+HSET inventorius:128 inventorius_id 128 pavadinimas "vienkartiniai šiaudeliai" kiekis 185 restoranas_id 15
+HSET inventorius:129 inventorius_id 129 pavadinimas šluota kiekis 4 restoranas_id 15
+HSET inventorius:130 inventorius_id 130 pavadinimas semėtuvas kiekis 6 restoranas_id 15
+HSET inventorius:131 inventorius_id 131 pavadinimas "virtuvinės žirklės" kiekis 9 restoranas_id 15
+HSET inventorius:132 inventorius_id 132 pavadinimas "pjaustymo peilis" kiekis 12 restoranas_id 15
+HSET inventorius:133 inventorius_id 133 pavadinimas "grilio mentelė" kiekis 7 restoranas_id 15
+HSET inventorius:134 inventorius_id 134 pavadinimas "kepimo pirštinės" kiekis 11 restoranas_id 15
+HSET inventorius:135 inventorius_id 135 pavadinimas "maisto dėžutės" kiekis 58 restoranas_id 15
+HSET inventorius:136 inventorius_id 136 pavadinimas "šaldymo dėžės" kiekis 3 restoranas_id 15
+HSET inventorius:137 inventorius_id 137 pavadinimas "druska, kg" kiekis 11 restoranas_id 15
+HSET inventorius:138 inventorius_id 138 pavadinimas "cukrus, kg" kiekis 13 restoranas_id 15
+HSET inventorius:139 inventorius_id 139 pavadinimas "pipirai, kg" kiekis 4 restoranas_id 15
+HSET inventorius:140 inventorius_id 140 pavadinimas "alyva, l" kiekis 22 restoranas_id 15
+HSET inventorius:141 inventorius_id 141 pavadinimas "acto butelis" kiekis 12 restoranas_id 15
+HSET inventorius:142 inventorius_id 142 pavadinimas "kepimo grotelės" kiekis 6 restoranas_id 15
+HSET inventorius:143 inventorius_id 143 pavadinimas "grilio iešmai" kiekis 48 restoranas_id 15
+HSET inventorius:144 inventorius_id 144 pavadinimas šaukštelis kiekis 62 restoranas_id 15
+HSET inventorius:145 inventorius_id 145 pavadinimas "stalo žvakės" kiekis 42 restoranas_id 15
+HSET inventorius:146 inventorius_id 146 pavadinimas "pjaustymo lenta plastikinė" kiekis 7 restoranas_id 15
+HSET inventorius:147 inventorius_id 147 pavadinimas "pjaustymo lenta medinė" kiekis 6 restoranas_id 15
+HSET inventorius:148 inventorius_id 148 pavadinimas "virtuvinis termometras" kiekis 4 restoranas_id 15
+HSET inventorius:149 inventorius_id 149 pavadinimas "sviestinis peilis" kiekis 17 restoranas_id 15
+HSET inventorius:150 inventorius_id 150 pavadinimas "kepimo forma silikoninė" kiekis 8 restoranas_id 15
+HSET inventorius:151 inventorius_id 151 pavadinimas "kepimo forma metalinė" kiekis 7 restoranas_id 15
+HSET inventorius:152 inventorius_id 152 pavadinimas "kepimo forma silikoninė" kiekis 8 restoranas_id 16
+HSET inventorius:153 inventorius_id 153 pavadinimas "kepimo forma metalinė" kiekis 7 restoranas_id 16
+HSET inventorius:154 inventorius_id 154 pavadinimas "kepimo forma silikoninė" kiekis 8 restoranas_id 17
+HSET inventorius:155 inventorius_id 155 pavadinimas "kepimo forma metalinė" kiekis 7 restoranas_id 17
+HSET inventorius:156 inventorius_id 156 pavadinimas "kepimo forma silikoninė" kiekis 8 restoranas_id 18
+HSET inventorius:157 inventorius_id 157 pavadinimas "kepimo forma metalinė" kiekis 7 restoranas_id 18
+HSET inventorius:158 inventorius_id 158 pavadinimas "kepimo forma silikoninė" kiekis 8 restoranas_id 19
+HSET inventorius:159 inventorius_id 159 pavadinimas "kepimo forma metalinė" kiekis 7 restoranas_id 19
+HSET inventorius:160 inventorius_id 160 pavadinimas "kepimo forma silikoninė" kiekis 8 restoranas_id 20
+HSET inventorius:161 inventorius_id 161 pavadinimas "kepimo forma metalinė" kiekis 7 restoranas_id 20
+HSET naudojamas_produktas:2 naudojamas_produktas_id 2 kiekis 1.100 receptas_id 5 produktas_id 12
+HSET naudojamas_produktas:3 naudojamas_produktas_id 3 kiekis 0.800 receptas_id 33 produktas_id 77
+HSET naudojamas_produktas:6 naudojamas_produktas_id 6 kiekis 0.500 receptas_id 41 produktas_id 91
+HSET naudojamas_produktas:7 naudojamas_produktas_id 7 kiekis 0.350 receptas_id 7 produktas_id 63
+HSET naudojamas_produktas:8 naudojamas_produktas_id 8 kiekis 0.900 receptas_id 18 produktas_id 22
+HSET naudojamas_produktas:9 naudojamas_produktas_id 9 kiekis 0.120 receptas_id 9 produktas_id 14
+HSET naudojamas_produktas:11 naudojamas_produktas_id 11 kiekis 0.600 receptas_id 14 produktas_id 33
+HSET naudojamas_produktas:13 naudojamas_produktas_id 13 kiekis 0.750 receptas_id 19 produktas_id 88
+HSET naudojamas_produktas:14 naudojamas_produktas_id 14 kiekis 0.330 receptas_id 21 produktas_id 47
+HSET naudojamas_produktas:15 naudojamas_produktas_id 15 kiekis 0.180 receptas_id 4 produktas_id 29
+HSET naudojamas_produktas:16 naudojamas_produktas_id 16 kiekis 0.950 receptas_id 11 produktas_id 72
+HSET naudojamas_produktas:18 naudojamas_produktas_id 18 kiekis 0.280 receptas_id 23 produktas_id 59
+HSET naudojamas_produktas:20 naudojamas_produktas_id 20 kiekis 0.550 receptas_id 6 produktas_id 25
+HSET naudojamas_produktas:21 naudojamas_produktas_id 21 kiekis 0.140 receptas_id 3 produktas_id 9
+HSET naudojamas_produktas:22 naudojamas_produktas_id 22 kiekis 0.480 receptas_id 44 produktas_id 66
+HSET naudojamas_produktas:24 naudojamas_produktas_id 24 kiekis 0.900 receptas_id 38 produktas_id 102
+HSET naudojamas_produktas:25 naudojamas_produktas_id 25 kiekis 0.520 receptas_id 25 produktas_id 57
+HSET naudojamas_produktas:26 naudojamas_produktas_id 26 kiekis 0.110 receptas_id 10 produktas_id 8
+HSET naudojamas_produktas:27 naudojamas_produktas_id 27 kiekis 0.760 receptas_id 13 produktas_id 73
+HSET naudojamas_produktas:29 naudojamas_produktas_id 29 kiekis 0.290 receptas_id 17 produktas_id 32
+HSET naudojamas_produktas:30 naudojamas_produktas_id 30 kiekis 0.850 receptas_id 35 produktas_id 97
+HSET naudojamas_produktas:32 naudojamas_produktas_id 32 kiekis 0.370 receptas_id 20 produktas_id 58
+HSET naudojamas_produktas:34 naudojamas_produktas_id 34 kiekis 0.720 receptas_id 30 produktas_id 84
+HSET naudojamas_produktas:35 naudojamas_produktas_id 35 kiekis 0.660 receptas_id 28 produktas_id 63
+HSET naudojamas_produktas:36 naudojamas_produktas_id 36 kiekis 0.540 receptas_id 26 produktas_id 49
+HSET naudojamas_produktas:37 naudojamas_produktas_id 37 kiekis 0.210 receptas_id 32 produktas_id 11
+HSET naudojamas_produktas:38 naudojamas_produktas_id 38 kiekis 0.310 receptas_id 34 produktas_id 27
+HSET naudojamas_produktas:41 naudojamas_produktas_id 41 kiekis 0.130 receptas_id 40 produktas_id 7
+HSET naudojamas_produktas:42 naudojamas_produktas_id 42 kiekis 0.620 receptas_id 42 produktas_id 68
+HSET naudojamas_produktas:44 naudojamas_produktas_id 44 kiekis 0.260 receptas_id 45 produktas_id 19
+HSET naudojamas_produktas:45 naudojamas_produktas_id 45 kiekis 0.340 receptas_id 46 produktas_id 24
+HSET naudojamas_produktas:47 naudojamas_produktas_id 47 kiekis 0.510 receptas_id 48 produktas_id 64
+HSET naudojamas_produktas:48 naudojamas_produktas_id 48 kiekis 0.390 receptas_id 49 produktas_id 28
+HSET naudojamas_produktas:49 naudojamas_produktas_id 49 kiekis 0.170 receptas_id 50 produktas_id 6
+HSET naudojamas_produktas:50 naudojamas_produktas_id 50 kiekis 0.420 receptas_id 51 produktas_id 71
+HSET naudojamas_produktas:52 naudojamas_produktas_id 52 kiekis 0.630 receptas_id 53 produktas_id 95
+HSET naudojamas_produktas:53 naudojamas_produktas_id 53 kiekis 0.210 receptas_id 54 produktas_id 13
+HSET naudojamas_produktas:56 naudojamas_produktas_id 56 kiekis 0.280 receptas_id 57 produktas_id 31
+HSET naudojamas_produktas:57 naudojamas_produktas_id 57 kiekis 0.920 receptas_id 58 produktas_id 104
+HSET naudojamas_produktas:58 naudojamas_produktas_id 58 kiekis 0.490 receptas_id 59 produktas_id 62
+HSET naudojamas_produktas:59 naudojamas_produktas_id 59 kiekis 0.330 receptas_id 60 produktas_id 26
+HSET naudojamas_produktas:61 naudojamas_produktas_id 61 kiekis 0.690 receptas_id 62 produktas_id 87
+HSET naudojamas_produktas:63 naudojamas_produktas_id 63 kiekis 0.220 receptas_id 64 produktas_id 15
+HSET naudojamas_produktas:65 naudojamas_produktas_id 65 kiekis 0.530 receptas_id 66 produktas_id 74
+HSET naudojamas_produktas:66 naudojamas_produktas_id 66 kiekis 0.310 receptas_id 67 produktas_id 34
+HSET naudojamas_produktas:67 naudojamas_produktas_id 67 kiekis 0.460 receptas_id 68 produktas_id 48
+HSET naudojamas_produktas:69 naudojamas_produktas_id 69 kiekis 0.240 receptas_id 70 produktas_id 10
+HSET naudojamas_produktas:70 naudojamas_produktas_id 70 kiekis 0.610 receptas_id 71 produktas_id 69
+HSET naudojamas_produktas:72 naudojamas_produktas_id 72 kiekis 0.270 receptas_id 73 produktas_id 20
+HSET naudojamas_produktas:74 naudojamas_produktas_id 74 kiekis 0.550 receptas_id 75 produktas_id 76
+HSET naudojamas_produktas:75 naudojamas_produktas_id 75 kiekis 0.480 receptas_id 76 produktas_id 58
+HSET naudojamas_produktas:76 naudojamas_produktas_id 76 kiekis 0.320 receptas_id 77 produktas_id 30
+HSET naudojamas_produktas:78 naudojamas_produktas_id 78 kiekis 0.290 receptas_id 79 produktas_id 23
+HSET naudojamas_produktas:80 naudojamas_produktas_id 80 kiekis 0.520 receptas_id 81 produktas_id 50
+HSET naudojamas_produktas:81 naudojamas_produktas_id 81 kiekis 0.350 receptas_id 82 produktas_id 21
+HSET naudojamas_produktas:82 naudojamas_produktas_id 82 kiekis 0.180 receptas_id 83 produktas_id 5
+HSET naudojamas_produktas:83 naudojamas_produktas_id 83 kiekis 0.910 receptas_id 84 produktas_id 110
+HSET naudojamas_produktas:85 naudojamas_produktas_id 85 kiekis 0.440 receptas_id 86 produktas_id 61
+HSET naudojamas_produktas:87 naudojamas_produktas_id 87 kiekis 0.590 receptas_id 88 produktas_id 70
+HSET naudojamas_produktas:89 naudojamas_produktas_id 89 kiekis 0.160 receptas_id 90 produktas_id 4
+HSET naudojamas_produktas:90 naudojamas_produktas_id 90 kiekis 0.780 receptas_id 91 produktas_id 96
+HSET naudojamas_produktas:91 naudojamas_produktas_id 91 kiekis 0.630 receptas_id 92 produktas_id 67
+HSET naudojamas_produktas:93 naudojamas_produktas_id 93 kiekis 0.220 receptas_id 94 produktas_id 12
+HSET naudojamas_produktas:94 naudojamas_produktas_id 94 kiekis 0.950 receptas_id 95 produktas_id 111
+HSET naudojamas_produktas:95 naudojamas_produktas_id 95 kiekis 0.510 receptas_id 96 produktas_id 75
+HSET naudojamas_produktas:96 naudojamas_produktas_id 96 kiekis 0.430 receptas_id 97 produktas_id 57
+HSET naudojamas_produktas:97 naudojamas_produktas_id 97 kiekis 0.190 receptas_id 98 produktas_id 14
+HSET naudojamas_produktas:98 naudojamas_produktas_id 98 kiekis 0.820 receptas_id 99 produktas_id 103
+HSET naudojamas_produktas:100 naudojamas_produktas_id 100 kiekis 0.660 receptas_id 101 produktas_id 85
+HSET naudojamas_produktas:101 naudojamas_produktas_id 101 kiekis 0.580 receptas_id 102 produktas_id 78
+HSET naudojamas_produktas:102 naudojamas_produktas_id 102 kiekis 0.290 receptas_id 103 produktas_id 33
+HSET naudojamas_produktas:103 naudojamas_produktas_id 103 kiekis 0.170 receptas_id 104 produktas_id 9
+HSET naudojamas_produktas:105 naudojamas_produktas_id 105 kiekis 0.540 receptas_id 106 produktas_id 71
+HSET naudojamas_produktas:108 naudojamas_produktas_id 108 kiekis 0.760 receptas_id 109 produktas_id 90
+HSET naudojamas_produktas:109 naudojamas_produktas_id 109 kiekis 0.320 receptas_id 110 produktas_id 27
+HSET naudojamas_produktas:110 naudojamas_produktas_id 110 kiekis 0.570 receptas_id 111 produktas_id 63
+HSET naudojamas_produktas:112 naudojamas_produktas_id 112 kiekis 0.280 receptas_id 113 produktas_id 22
+HSET naudojamas_produktas:113 naudojamas_produktas_id 113 kiekis 0.940 receptas_id 114 produktas_id 112
+HSET naudojamas_produktas:115 naudojamas_produktas_id 115 kiekis 0.470 receptas_id 116 produktas_id 56
+HSET naudojamas_produktas:116 naudojamas_produktas_id 116 kiekis 0.250 receptas_id 117 produktas_id 19
+HSET naudojamas_produktas:117 naudojamas_produktas_id 117 kiekis 0.710 receptas_id 118 produktas_id 86
+HSET naudojamas_produktas:119 naudojamas_produktas_id 119 kiekis 0.140 receptas_id 120 produktas_id 7
+HSET naudojamas_produktas:120 naudojamas_produktas_id 120 kiekis 0.680 receptas_id 121 produktas_id 65
+HSET naudojamas_produktas:121 naudojamas_produktas_id 121 kiekis 0.360 receptas_id 122 produktas_id 31
+HSET naudojamas_produktas:122 naudojamas_produktas_id 122 kiekis 0.270 receptas_id 123 produktas_id 20
+HSET naudojamas_produktas:123 naudojamas_produktas_id 123 kiekis 0.970 receptas_id 124 produktas_id 113
+HSET naudojamas_produktas:126 naudojamas_produktas_id 126 kiekis 0.330 receptas_id 127 produktas_id 28
+HSET naudojamas_produktas:128 naudojamas_produktas_id 128 kiekis 0.490 receptas_id 129 produktas_id 60
+HSET naudojamas_produktas:129 naudojamas_produktas_id 129 kiekis 0.180 receptas_id 130 produktas_id 6
+HSET naudojamas_produktas:130 naudojamas_produktas_id 130 kiekis 0.740 receptas_id 131 produktas_id 89
+HSET naudojamas_produktas:131 naudojamas_produktas_id 131 kiekis 0.610 receptas_id 132 produktas_id 73
+HSET naudojamas_produktas:133 naudojamas_produktas_id 133 kiekis 0.240 receptas_id 134 produktas_id 15
+HSET naudojamas_produktas:134 naudojamas_produktas_id 134 kiekis 0.930 receptas_id 135 produktas_id 114
+HSET naudojamas_produktas:136 naudojamas_produktas_id 136 kiekis 0.440 receptas_id 137 produktas_id 50
+HSET naudojamas_produktas:137 naudojamas_produktas_id 137 kiekis 0.290 receptas_id 138 produktas_id 23
+HSET naudojamas_produktas:139 naudojamas_produktas_id 139 kiekis 0.320 receptas_id 140 produktas_id 29
+HSET naudojamas_produktas:140 naudojamas_produktas_id 140 kiekis 0.690 receptas_id 141 produktas_id 68
+HSET naudojamas_produktas:141 naudojamas_produktas_id 141 kiekis 0.520 receptas_id 142 produktas_id 47
+HSET naudojamas_produktas:142 naudojamas_produktas_id 142 kiekis 0.310 receptas_id 143 produktas_id 21
+HSET naudojamas_produktas:143 naudojamas_produktas_id 143 kiekis 0.960 receptas_id 144 produktas_id 115
+HSET naudojamas_produktas:145 naudojamas_produktas_id 145 kiekis 0.480 receptas_id 146 produktas_id 58
+HSET naudojamas_produktas:148 naudojamas_produktas_id 148 kiekis 0.550 receptas_id 149 produktas_id 70
+HSET naudojamas_produktas:149 naudojamas_produktas_id 149 kiekis 0.190 receptas_id 150 produktas_id 4
+HSET naudojamas_produktas:150 naudojamas_produktas_id 150 kiekis 0.770 receptas_id 151 produktas_id 97
+HSET naudojamas_produktas:151 naudojamas_produktas_id 151 kiekis 0.640 receptas_id 152 produktas_id 74
+HSET naudojamas_produktas:153 naudojamas_produktas_id 153 kiekis 0.230 receptas_id 154 produktas_id 13
+HSET naudojamas_produktas:154 naudojamas_produktas_id 154 kiekis 0.910 receptas_id 155 produktas_id 116
+HSET naudojamas_produktas:157 naudojamas_produktas_id 157 kiekis 0.280 receptas_id 158 produktas_id 26
+HSET naudojamas_produktas:159 naudojamas_produktas_id 159 kiekis 0.340 receptas_id 160 produktas_id 30
+HSET naudojamas_produktas:160 naudojamas_produktas_id 160 kiekis 0.710 receptas_id 161 produktas_id 88
+HSET naudojamas_produktas:161 naudojamas_produktas_id 161 kiekis 0.530 receptas_id 162 produktas_id 62
+HSET naudojamas_produktas:164 naudojamas_produktas_id 164 kiekis 0.940 receptas_id 165 produktas_id 117
+HSET naudojamas_produktas:165 naudojamas_produktas_id 165 kiekis 0.580 receptas_id 166 produktas_id 76
+HSET naudojamas_produktas:166 naudojamas_produktas_id 166 kiekis 0.450 receptas_id 167 produktas_id 49
+HSET naudojamas_produktas:167 naudojamas_produktas_id 167 kiekis 0.310 receptas_id 168 produktas_id 27
+HSET naudojamas_produktas:168 naudojamas_produktas_id 168 kiekis 0.860 receptas_id 169 produktas_id 102
+HSET naudojamas_produktas:169 naudojamas_produktas_id 169 kiekis 0.220 receptas_id 170 produktas_id 9
+HSET naudojamas_produktas:170 naudojamas_produktas_id 170 kiekis 0.790 receptas_id 171 produktas_id 90
+HSET naudojamas_produktas:171 naudojamas_produktas_id 171 kiekis 0.660 receptas_id 172 produktas_id 72
+HSET naudojamas_produktas:174 naudojamas_produktas_id 174 kiekis 0.980 receptas_id 175 produktas_id 118
+HSET naudojamas_produktas:175 naudojamas_produktas_id 175 kiekis 0.610 receptas_id 176 produktas_id 84
+HSET naudojamas_produktas:176 naudojamas_produktas_id 176 kiekis 0.470 receptas_id 177 produktas_id 57
+HSET naudojamas_produktas:177 naudojamas_produktas_id 177 kiekis 0.290 receptas_id 178 produktas_id 25
+HSET naudojamas_produktas:178 naudojamas_produktas_id 178 kiekis 0.890 receptas_id 179 produktas_id 103
+HSET naudojamas_produktas:179 naudojamas_produktas_id 179 kiekis 0.330 receptas_id 180 produktas_id 11
+HSET naudojamas_produktas:180 naudojamas_produktas_id 180 kiekis 0.830 receptas_id 2 produktas_id 1
+HSET naudojamas_produktas:181 naudojamas_produktas_id 181 kiekis 0.340 receptas_id 5 produktas_id 1
+HSET naudojamas_produktas:182 naudojamas_produktas_id 182 kiekis 0.710 receptas_id 7 produktas_id 3
+HSET naudojamas_produktas:183 naudojamas_produktas_id 183 kiekis 0.530 receptas_id 9 produktas_id 3
+HSET naudojamas_produktas:184 naudojamas_produktas_id 184 kiekis 0.370 receptas_id 9 produktas_id 4
+HSET naudojamas_produktas:185 naudojamas_produktas_id 185 kiekis 0.250 receptas_id 11 produktas_id 1
+HSET naudojamas_produktas:187 naudojamas_produktas_id 187 kiekis 0.580 receptas_id 16 produktas_id 7
+HSET naudojamas_produktas:188 naudojamas_produktas_id 188 kiekis 0.450 receptas_id 67 produktas_id 49
+HSET naudojamas_produktas:189 naudojamas_produktas_id 189 kiekis 0.310 receptas_id 68 produktas_id 27
+HSET naudojamas_produktas:190 naudojamas_produktas_id 190 kiekis 0.860 receptas_id 169 produktas_id 12
+HSET naudojamas_produktas:191 naudojamas_produktas_id 191 kiekis 0.220 receptas_id 10 produktas_id 9
+HSET naudojamas_produktas:192 naudojamas_produktas_id 192 kiekis 0.790 receptas_id 171 produktas_id 9
+HSET naudojamas_produktas:193 naudojamas_produktas_id 193 kiekis 0.660 receptas_id 12 produktas_id 72
+HSET naudojamas_produktas:196 naudojamas_produktas_id 196 kiekis 0.980 receptas_id 15 produktas_id 118
+HSET naudojamas_produktas:197 naudojamas_produktas_id 197 kiekis 0.610 receptas_id 16 produktas_id 84
+HSET naudojamas_produktas:198 naudojamas_produktas_id 198 kiekis 0.470 receptas_id 77 produktas_id 57
+HSET naudojamas_produktas:199 naudojamas_produktas_id 199 kiekis 0.290 receptas_id 78 produktas_id 25
+HSET naudojamas_produktas:200 naudojamas_produktas_id 200 kiekis 0.890 receptas_id 79 produktas_id 103
+HSET naudojamas_produktas:201 naudojamas_produktas_id 201 kiekis 0.330 receptas_id 10 produktas_id 11
+HSET produktas:1 produktas_id 1 pavadinimas svogūnas kiekis 22.000 galiojimo_pabaiga 2026-04-30 restoranas_id 1
+HSET produktas:2 produktas_id 2 pavadinimas česnakas kiekis 36.000 galiojimo_pabaiga 2026-05-24 restoranas_id 1
+HSET produktas:3 produktas_id 3 pavadinimas česnakas kiekis 52.000 galiojimo_pabaiga 2026-06-12 restoranas_id 2
+HSET produktas:4 produktas_id 4 pavadinimas eriena kiekis 4.500 galiojimo_pabaiga 2026-03-28 restoranas_id 1
+HSET produktas:5 produktas_id 5 pavadinimas vištiena kiekis 8.890 galiojimo_pabaiga 2026-03-26 restoranas_id 1
+HSET produktas:6 produktas_id 6 pavadinimas vištiena kiekis 8.230 galiojimo_pabaiga 2026-03-26 restoranas_id 2
+HSET produktas:7 produktas_id 7 pavadinimas "česnakinis padažas" kiekis 4.200 galiojimo_pabaiga 2026-05-02 restoranas_id 1
+HSET produktas:8 produktas_id 8 pavadinimas "česnakinis padažas" kiekis 3.900 galiojimo_pabaiga 2026-05-01 restoranas_id 2
+HSET produktas:9 produktas_id 9 pavadinimas "šaldytos bulvytės fri" kiekis 12.000 galiojimo_pabaiga 2026-09-26 restoranas_id 1
+HSET produktas:10 produktas_id 10 pavadinimas "šaldytos bulvytės fri" kiekis 11.000 galiojimo_pabaiga 2026-09-29 restoranas_id 2
+HSET produktas:11 produktas_id 11 pavadinimas "kininis kopūstas" kiekis 100.000 galiojimo_pabaiga 2026-03-28 restoranas_id 1
+HSET produktas:12 produktas_id 12 pavadinimas "kininis kopūstas" kiekis 87.000 galiojimo_pabaiga 2026-03-26 restoranas_id 2
+HSET produktas:13 produktas_id 13 pavadinimas "didelis lavašas" kiekis 32.000 galiojimo_pabaiga 2026-10-10 restoranas_id 1
+HSET produktas:14 produktas_id 14 pavadinimas "vidutinis lavašas" kiekis 47.000 galiojimo_pabaiga 2026-11-06 restoranas_id 2
+HSET produktas:15 produktas_id 15 pavadinimas morka kiekis 45.000 galiojimo_pabaiga 2026-04-12 restoranas_id 17
+HSET produktas:19 produktas_id 19 pavadinimas pomidoras kiekis 28.000 galiojimo_pabaiga 2026-04-03 restoranas_id 12
+HSET produktas:20 produktas_id 20 pavadinimas "alyvuogių aliejus" kiekis 15.000 galiojimo_pabaiga 2027-01-10 restoranas_id 7
+HSET produktas:21 produktas_id 21 pavadinimas alyvuogės kiekis 9.500 galiojimo_pabaiga 2026-10-22 restoranas_id 7
+HSET produktas:22 produktas_id 22 pavadinimas "feta sūris" kiekis 6.200 galiojimo_pabaiga 2026-06-14 restoranas_id 7
+HSET produktas:23 produktas_id 23 pavadinimas varškė kiekis 12.400 galiojimo_pabaiga 2026-05-18 restoranas_id 19
+HSET produktas:24 produktas_id 24 pavadinimas grietinėlė kiekis 8.100 galiojimo_pabaiga 2026-04-30 restoranas_id 19
+HSET produktas:25 produktas_id 25 pavadinimas špinatai kiekis 21.000 galiojimo_pabaiga 2026-03-27 restoranas_id 33
+HSET produktas:26 produktas_id 26 pavadinimas brokoliai kiekis 18.000 galiojimo_pabaiga 2026-03-28 restoranas_id 33
+HSET produktas:27 produktas_id 27 pavadinimas "žiediniai kopūstai" kiekis 14.000 galiojimo_pabaiga 2026-03-29 restoranas_id 33
+HSET produktas:28 produktas_id 28 pavadinimas tofu kiekis 11.200 galiojimo_pabaiga 2026-04-15 restoranas_id 41
+HSET produktas:29 produktas_id 29 pavadinimas "sojų padažas" kiekis 7.800 galiojimo_pabaiga 2027-02-01 restoranas_id 41
+HSET produktas:30 produktas_id 30 pavadinimas "sezamo sėklos" kiekis 3.400 galiojimo_pabaiga 2027-03-10 restoranas_id 41
+HSET produktas:31 produktas_id 31 pavadinimas ryžiai kiekis 90.000 galiojimo_pabaiga 2027-05-01 restoranas_id 12
+HSET produktas:32 produktas_id 32 pavadinimas makaronai kiekis 60.000 galiojimo_pabaiga 2027-02-20 restoranas_id 12
+HSET produktas:33 produktas_id 33 pavadinimas "kvietiniai miltai" kiekis 75.000 galiojimo_pabaiga 2027-01-15 restoranas_id 12
+HSET produktas:34 produktas_id 34 pavadinimas kiaušiniai kiekis 200.000 galiojimo_pabaiga 2026-03-20 restoranas_id 12
+HSET produktas:47 produktas_id 47 pavadinimas "salierų stiebai" kiekis 18.000 galiojimo_pabaiga 2026-03-28 restoranas_id 44
+HSET produktas:48 produktas_id 48 pavadinimas garstyčios kiekis 4.200 galiojimo_pabaiga 2027-01-01 restoranas_id 44
+HSET produktas:49 produktas_id 49 pavadinimas krapai kiekis 6.500 galiojimo_pabaiga 2026-03-25 restoranas_id 44
+HSET produktas:50 produktas_id 50 pavadinimas petražolės kiekis 7.200 galiojimo_pabaiga 2026-03-25 restoranas_id 44
+HSET produktas:56 produktas_id 56 pavadinimas citrinos kiekis 34.000 galiojimo_pabaiga 2026-05-10 restoranas_id 33
+HSET produktas:57 produktas_id 57 pavadinimas apelsinai kiekis 40.000 galiojimo_pabaiga 2026-05-12 restoranas_id 33
+HSET produktas:58 produktas_id 58 pavadinimas bananai kiekis 55.000 galiojimo_pabaiga 2026-04-05 restoranas_id 33
+HSET produktas:59 produktas_id 59 pavadinimas obuoliai kiekis 70.000 galiojimo_pabaiga 2026-04-20 restoranas_id 33
+HSET produktas:60 produktas_id 60 pavadinimas kriaušės kiekis 48.000 galiojimo_pabaiga 2026-04-18 restoranas_id 33
+HSET produktas:61 produktas_id 61 pavadinimas avokadai kiekis 26.000 galiojimo_pabaiga 2026-04-04 restoranas_id 33
+HSET produktas:62 produktas_id 62 pavadinimas bazilikas kiekis 4.100 galiojimo_pabaiga 2026-03-24 restoranas_id 33
+HSET produktas:63 produktas_id 63 pavadinimas "raudonasis svogūnas" kiekis 31.000 galiojimo_pabaiga 2026-04-08 restoranas_id 33
+HSET produktas:64 produktas_id 64 pavadinimas imbieras kiekis 12.300 galiojimo_pabaiga 2026-05-01 restoranas_id 33
+HSET produktas:65 produktas_id 65 pavadinimas "čili pipirai" kiekis 5.600 galiojimo_pabaiga 2026-04-15 restoranas_id 33
+HSET produktas:66 produktas_id 66 pavadinimas medus kiekis 9.900 galiojimo_pabaiga 2027-06-01 restoranas_id 33
+HSET produktas:67 produktas_id 67 pavadinimas cukrus kiekis 50.000 galiojimo_pabaiga 2028-01-01 restoranas_id 33
+HSET produktas:68 produktas_id 68 pavadinimas druska kiekis 80.000 galiojimo_pabaiga 2030-01-01 restoranas_id 33
+HSET produktas:69 produktas_id 69 pavadinimas šalotos kiekis 18.000 galiojimo_pabaiga 2026-03-29 restoranas_id 12
+HSET produktas:70 produktas_id 70 pavadinimas "raudonieji pipirai" kiekis 14.000 galiojimo_pabaiga 2026-04-02 restoranas_id 45
+HSET produktas:71 produktas_id 71 pavadinimas "žalieji pipirai" kiekis 13.000 galiojimo_pabaiga 2026-04-02 restoranas_id 45
+HSET produktas:72 produktas_id 72 pavadinimas "česnako granulės" kiekis 4.500 galiojimo_pabaiga 2027-01-10 restoranas_id 45
+HSET produktas:73 produktas_id 73 pavadinimas "imbiero pasta" kiekis 3.200 galiojimo_pabaiga 2026-12-01 restoranas_id 45
+HSET produktas:74 produktas_id 74 pavadinimas ciberžolė kiekis 2.100 galiojimo_pabaiga 2028-01-01 restoranas_id 45
+HSET produktas:75 produktas_id 75 pavadinimas cinamonas kiekis 1.800 galiojimo_pabaiga 2028-03-01 restoranas_id 45
+HSET produktas:76 produktas_id 76 pavadinimas kardamonas kiekis 1.200 galiojimo_pabaiga 2028-03-01 restoranas_id 45
+HSET produktas:77 produktas_id 77 pavadinimas "čili milteliai" kiekis 2.400 galiojimo_pabaiga 2027-11-01 restoranas_id 45
+HSET produktas:78 produktas_id 78 pavadinimas "juodieji pipirai" kiekis 3.300 galiojimo_pabaiga 2028-01-01 restoranas_id 45
+HSET produktas:84 produktas_id 84 pavadinimas "šaldytos braškės" kiekis 22.000 galiojimo_pabaiga 2027-02-10 restoranas_id 33
+HSET produktas:85 produktas_id 85 pavadinimas "šaldytos mėlynės" kiekis 19.000 galiojimo_pabaiga 2027-02-10 restoranas_id 33
+HSET produktas:86 produktas_id 86 pavadinimas "šaldyti špinatai" kiekis 17.000 galiojimo_pabaiga 2027-03-01 restoranas_id 33
+HSET produktas:87 produktas_id 87 pavadinimas "šaldyti brokoliai" kiekis 20.000 galiojimo_pabaiga 2027-03-01 restoranas_id 33
+HSET produktas:88 produktas_id 88 pavadinimas grietinė kiekis 11.300 galiojimo_pabaiga 2026-04-20 restoranas_id 19
+HSET produktas:89 produktas_id 89 pavadinimas sviestas kiekis 9.700 galiojimo_pabaiga 2026-06-01 restoranas_id 19
+HSET produktas:90 produktas_id 90 pavadinimas pienas kiekis 25.000 galiojimo_pabaiga 2026-03-25 restoranas_id 19
+HSET produktas:91 produktas_id 91 pavadinimas kefyras kiekis 18.000 galiojimo_pabaiga 2026-03-28 restoranas_id 19
+HSET produktas:95 produktas_id 95 pavadinimas "sojų pupelės" kiekis 13.000 galiojimo_pabaiga 2027-01-01 restoranas_id 41
+HSET produktas:96 produktas_id 96 pavadinimas "tofu šilkinis" kiekis 9.400 galiojimo_pabaiga 2026-04-18 restoranas_id 41
+HSET produktas:97 produktas_id 97 pavadinimas tempeh kiekis 8.200 galiojimo_pabaiga 2026-05-01 restoranas_id 41
+HSET produktas:102 produktas_id 102 pavadinimas šampinjonai kiekis 18.000 galiojimo_pabaiga 2026-03-28 restoranas_id 12
+HSET produktas:103 produktas_id 103 pavadinimas "baravykai džiovinti" kiekis 3.200 galiojimo_pabaiga 2028-01-01 restoranas_id 12
+HSET produktas:104 produktas_id 104 pavadinimas "voveraitės šaldytos" kiekis 6.700 galiojimo_pabaiga 2027-02-01 restoranas_id 12
+HSET produktas:110 produktas_id 110 pavadinimas aviena kiekis 14.200 galiojimo_pabaiga 2026-04-10 restoranas_id 22
+HSET produktas:111 produktas_id 111 pavadinimas kiauliena kiekis 22.500 galiojimo_pabaiga 2026-04-08 restoranas_id 22
+HSET produktas:112 produktas_id 112 pavadinimas kalakutiena kiekis 19.300 galiojimo_pabaiga 2026-04-12 restoranas_id 22
+HSET produktas:113 produktas_id 113 pavadinimas jautiena kiekis 25.700 galiojimo_pabaiga 2026-04-09 restoranas_id 22
+HSET produktas:114 produktas_id 114 pavadinimas šoninė kiekis 12.800 galiojimo_pabaiga 2026-04-05 restoranas_id 22
+HSET produktas:115 produktas_id 115 pavadinimas dešrelės kiekis 15.400 galiojimo_pabaiga 2026-05-01 restoranas_id 22
+HSET produktas:116 produktas_id 116 pavadinimas "kumpis virtas" kiekis 10.900 galiojimo_pabaiga 2026-04-20 restoranas_id 22
+HSET produktas:117 produktas_id 117 pavadinimas majonezas kiekis 8.300 galiojimo_pabaiga 2026-09-01 restoranas_id 33
+HSET produktas:118 produktas_id 118 pavadinimas kečupas kiekis 9.100 galiojimo_pabaiga 2027-01-01 restoranas_id 33
+HSET produktas:119 produktas_id 119 pavadinimas "garstyčių padažas" kiekis 6.400 galiojimo_pabaiga 2027-02-01 restoranas_id 33
+HSET produktas:120 produktas_id 120 pavadinimas "BBQ padažas" kiekis 7.200 galiojimo_pabaiga 2027-03-01 restoranas_id 33
+HSET produktas:121 produktas_id 121 pavadinimas "ryžių makaronai" kiekis 42.000 galiojimo_pabaiga 2027-01-10 restoranas_id 14
+HSET produktas:122 produktas_id 122 pavadinimas "kiaušinių makaronai" kiekis 38.000 galiojimo_pabaiga 2026-12-01 restoranas_id 14
+HSET produktas:123 produktas_id 123 pavadinimas "soba makaronai" kiekis 27.000 galiojimo_pabaiga 2027-03-01 restoranas_id 14
+HSET produktas:124 produktas_id 124 pavadinimas "udon makaronai" kiekis 33.000 galiojimo_pabaiga 2027-02-01 restoranas_id 14
+HSET produktas:125 produktas_id 125 pavadinimas "bulgur kruopos" kiekis 55.000 galiojimo_pabaiga 2027-04-01 restoranas_id 14
+HSET produktas:126 produktas_id 126 pavadinimas "perlinės kruopos" kiekis 48.000 galiojimo_pabaiga 2027-05-01 restoranas_id 14
+HSET produktas:127 produktas_id 127 pavadinimas soros kiekis 36.000 galiojimo_pabaiga 2027-06-01 restoranas_id 14
+HSET produktas:128 produktas_id 128 pavadinimas "avižiniai dribsniai" kiekis 62.000 galiojimo_pabaiga 2027-07-01 restoranas_id 14
+HSET produktas:129 produktas_id 129 pavadinimas "grikiai skrudinti" kiekis 44.000 galiojimo_pabaiga 2027-08-01 restoranas_id 14
+HSET produktas:130 produktas_id 130 pavadinimas "grikiai neskrudinti" kiekis 47.000 galiojimo_pabaiga 2027-08-01 restoranas_id 14
+HSET produktas:131 produktas_id 131 pavadinimas "saulėgrąžų aliejus" kiekis 25.000 galiojimo_pabaiga 2028-01-01 restoranas_id 32
+HSET produktas:132 produktas_id 132 pavadinimas "rapsų aliejus" kiekis 30.000 galiojimo_pabaiga 2028-01-01 restoranas_id 32
+HSET produktas:133 produktas_id 133 pavadinimas "kokosų aliejus" kiekis 12.000 galiojimo_pabaiga 2028-03-01 restoranas_id 32
+HSET produktas:134 produktas_id 134 pavadinimas "sezamų aliejus" kiekis 7.500 galiojimo_pabaiga 2027-11-01 restoranas_id 32
+HSET produktas:135 produktas_id 135 pavadinimas "balzamiko actas" kiekis 9.200 galiojimo_pabaiga 2028-02-01 restoranas_id 32
+HSET produktas:136 produktas_id 136 pavadinimas "vyno actas" kiekis 11.400 galiojimo_pabaiga 2028-02-01 restoranas_id 32
+HSET produktas:137 produktas_id 137 pavadinimas "ryžių actas" kiekis 10.100 galiojimo_pabaiga 2028-02-01 restoranas_id 32
+HSET produktas:138 produktas_id 138 pavadinimas "citrinų sultys" kiekis 14.000 galiojimo_pabaiga 2026-12-15 restoranas_id 32
+HSET produktas:139 produktas_id 139 pavadinimas "laimų sultys" kiekis 13.000 galiojimo_pabaiga 2026-12-15 restoranas_id 32
+HSET produktas:151 produktas_id 151 pavadinimas "čili padažas" kiekis 7.100 galiojimo_pabaiga 2027-01-01 restoranas_id 18
+HSET produktas:152 produktas_id 152 pavadinimas "saldžiarūgštis padažas" kiekis 8.400 galiojimo_pabaiga 2027-01-01 restoranas_id 18
+HSET produktas:153 produktas_id 153 pavadinimas "teriyaki padažas" kiekis 6.900 galiojimo_pabaiga 2027-01-01 restoranas_id 18
+HSET produktas:154 produktas_id 154 pavadinimas "sriracha padažas" kiekis 7.300 galiojimo_pabaiga 2027-01-01 restoranas_id 18
+HSET produktas:155 produktas_id 155 pavadinimas "hoisin padažas" kiekis 5.800 galiojimo_pabaiga 2027-01-01 restoranas_id 18
+HSET produktas:156 produktas_id 156 pavadinimas "žemės riešutų padažas" kiekis 6.100 galiojimo_pabaiga 2027-01-01 restoranas_id 18
+HSET produktas:157 produktas_id 157 pavadinimas tahini kiekis 4.700 galiojimo_pabaiga 2027-01-01 restoranas_id 18
+HSET produktas:158 produktas_id 158 pavadinimas "česnakinis majonezas" kiekis 8.200 galiojimo_pabaiga 2026-10-01 restoranas_id 18
+HSET produktas:159 produktas_id 159 pavadinimas "sojų grietinėlė" kiekis 9.400 galiojimo_pabaiga 2026-09-01 restoranas_id 18
+HSET produktas:160 produktas_id 160 pavadinimas "kokosų grietinėlė" kiekis 10.100 galiojimo_pabaiga 2026-09-01 restoranas_id 18
+HSET produktas:161 produktas_id 161 pavadinimas "ryžių pienas" kiekis 15.000 galiojimo_pabaiga 2026-08-01 restoranas_id 18
+HSET produktas:162 produktas_id 162 pavadinimas "migdolų pienas" kiekis 14.000 galiojimo_pabaiga 2026-08-01 restoranas_id 18
+HSET produktas:163 produktas_id 163 pavadinimas "avižų pienas" kiekis 16.000 galiojimo_pabaiga 2026-08-01 restoranas_id 18
+HSET produktas:164 produktas_id 164 pavadinimas "šokoladinis sirupas" kiekis 6.300 galiojimo_pabaiga 2027-03-01 restoranas_id 18
+HSET produktas:165 produktas_id 165 pavadinimas "karamelės sirupas" kiekis 7.200 galiojimo_pabaiga 2027-03-01 restoranas_id 18
+HSET produktas:166 produktas_id 166 pavadinimas "vanilės sirupas" kiekis 7.500 galiojimo_pabaiga 2027-03-01 restoranas_id 18
+HSET produktas:167 produktas_id 167 pavadinimas mėtos kiekis 4.200 galiojimo_pabaiga 2026-03-25 restoranas_id 18
+HSET produktas:168 produktas_id 168 pavadinimas čiobreliai kiekis 3.800 galiojimo_pabaiga 2026-03-25 restoranas_id 18
+HSET produktas:169 produktas_id 169 pavadinimas rozmarinas kiekis 3.400 galiojimo_pabaiga 2026-03-25 restoranas_id 18
+HSET produktas:170 produktas_id 170 pavadinimas svogūnas kiekis 22.000 galiojimo_pabaiga 2026-04-30 restoranas_id 2
+HSET produktas:171 produktas_id 171 pavadinimas česnakas kiekis 36.000 galiojimo_pabaiga 2026-05-24 restoranas_id 3
+HSET produktas:172 produktas_id 172 pavadinimas česnakas kiekis 52.000 galiojimo_pabaiga 2026-06-12 restoranas_id 4
+HSET produktas:173 produktas_id 173 pavadinimas eriena kiekis 4.500 galiojimo_pabaiga 2026-03-28 restoranas_id 4
+HSET produktas:174 produktas_id 174 pavadinimas vištiena kiekis 8.890 galiojimo_pabaiga 2026-03-26 restoranas_id 3
+HSET produktas:175 produktas_id 175 pavadinimas vištiena kiekis 8.230 galiojimo_pabaiga 2026-03-26 restoranas_id 4
+HSET produktas:176 produktas_id 176 pavadinimas "česnakinis padažas" kiekis 4.200 galiojimo_pabaiga 2026-05-02 restoranas_id 3
+HSET produktas:177 produktas_id 177 pavadinimas "česnakinis padažas" kiekis 3.900 galiojimo_pabaiga 2026-05-01 restoranas_id 4
+HSET produktas:178 produktas_id 178 pavadinimas "šaldytos bulvytės fri" kiekis 12.000 galiojimo_pabaiga 2026-09-26 restoranas_id 3
+HSET produktas:179 produktas_id 179 pavadinimas "šaldytos bulvytės fri" kiekis 11.000 galiojimo_pabaiga 2026-09-29 restoranas_id 4
+HSET produktas:180 produktas_id 180 pavadinimas "kininis kopūstas" kiekis 100.000 galiojimo_pabaiga 2026-03-28 restoranas_id 3
+HSET produktas:181 produktas_id 181 pavadinimas "kininis kopūstas" kiekis 87.000 galiojimo_pabaiga 2026-03-26 restoranas_id 4
+HSET produktas:182 produktas_id 182 pavadinimas "didelis lavašas" kiekis 32.000 galiojimo_pabaiga 2026-10-10 restoranas_id 3
+HSET produktas:183 produktas_id 183 pavadinimas "vidutinis lavašas" kiekis 47.000 galiojimo_pabaiga 2026-11-06 restoranas_id 4
+HSET produktas:184 produktas_id 184 pavadinimas morka kiekis 45.000 galiojimo_pabaiga 2026-04-12 restoranas_id 6
+HSET produktas:185 produktas_id 185 pavadinimas bulvės kiekis 120.000 galiojimo_pabaiga 2026-05-01 restoranas_id 6
+HSET produktas:186 produktas_id 186 pavadinimas agurkas kiekis 33.000 galiojimo_pabaiga 2026-03-29 restoranas_id 6
+HSET produktas:187 produktas_id 187 pavadinimas pomidoras kiekis 28.000 galiojimo_pabaiga 2026-04-03 restoranas_id 6
+HSET produktas:188 produktas_id 188 pavadinimas "alyvuogių aliejus" kiekis 15.000 galiojimo_pabaiga 2027-01-10 restoranas_id 6
+HSET produktas:189 produktas_id 189 pavadinimas alyvuogės kiekis 9.500 galiojimo_pabaiga 2026-10-22 restoranas_id 6
+HSET produktas:190 produktas_id 190 pavadinimas "feta sūris" kiekis 6.200 galiojimo_pabaiga 2026-06-14 restoranas_id 6
+HSET produktas:191 produktas_id 191 pavadinimas varškė kiekis 12.400 galiojimo_pabaiga 2026-05-18 restoranas_id 7
+HSET produktas:192 produktas_id 192 pavadinimas grietinėlė kiekis 8.100 galiojimo_pabaiga 2026-04-30 restoranas_id 7
+HSET produktas:193 produktas_id 193 pavadinimas špinatai kiekis 21.000 galiojimo_pabaiga 2026-03-27 restoranas_id 7
+HSET produktas:194 produktas_id 194 pavadinimas brokoliai kiekis 18.000 galiojimo_pabaiga 2026-03-28 restoranas_id 10
+HSET produktas:195 produktas_id 195 pavadinimas "žiediniai kopūstai" kiekis 14.000 galiojimo_pabaiga 2026-03-29 restoranas_id 10
+HSET produktas:196 produktas_id 196 pavadinimas tofu kiekis 11.200 galiojimo_pabaiga 2026-04-15 restoranas_id 10
+HSET produktas:197 produktas_id 197 pavadinimas "sojų padažas" kiekis 7.800 galiojimo_pabaiga 2027-02-01 restoranas_id 10
+HSET produktas:198 produktas_id 198 pavadinimas "sezamo sėklos" kiekis 3.400 galiojimo_pabaiga 2027-03-10 restoranas_id 10
+HSET produktas:199 produktas_id 199 pavadinimas ryžiai kiekis 90.000 galiojimo_pabaiga 2027-05-01 restoranas_id 7
+HSET produktas:200 produktas_id 200 pavadinimas makaronai kiekis 60.000 galiojimo_pabaiga 2027-02-20 restoranas_id 7
+HSET produktas:201 produktas_id 201 pavadinimas "kvietiniai miltai" kiekis 75.000 galiojimo_pabaiga 2027-01-15 restoranas_id 7
+HSET produktas:202 produktas_id 202 pavadinimas kiaušiniai kiekis 200.000 galiojimo_pabaiga 2026-03-20 restoranas_id 7
+HSET produktas:203 produktas_id 203 pavadinimas "šokoladas juodasis" kiekis 8.700 galiojimo_pabaiga 2027-04-11 restoranas_id 7
+HSET produktas:204 produktas_id 204 pavadinimas "šokoladas pieniškas" kiekis 9.100 galiojimo_pabaiga 2027-04-11 restoranas_id 7
+HSET produktas:205 produktas_id 205 pavadinimas "riešutų kremas" kiekis 5.200 galiojimo_pabaiga 2026-09-01 restoranas_id 7
+HSET produktas:206 produktas_id 206 pavadinimas anakardžiai kiekis 4.300 galiojimo_pabaiga 2027-02-14 restoranas_id 7
+HSET produktas:207 produktas_id 207 pavadinimas migdolai kiekis 6.800 galiojimo_pabaiga 2027-03-01 restoranas_id 7
+HSET produktas:208 produktas_id 208 pavadinimas "lazdyno riešutai" kiekis 5.900 galiojimo_pabaiga 2027-03-01 restoranas_id 7
+HSET restoranas:1 restoranas_id 1 pavadinimas "Skanumynų užeiga" vietove Kaunas telefonas +37061234567
+HSET restoranas:2 restoranas_id 2 pavadinimas "Pica Express" vietove Kaunas svetaine https://picaexpress.lt
+HSET restoranas:3 restoranas_id 3 pavadinimas "Bistro 24" vietove Kaunas telefonas +37060011223
+HSET restoranas:4 restoranas_id 4 pavadinimas "Gardus Kampas" vietove Kaunas
+HSET restoranas:5 restoranas_id 5 pavadinimas "Sultingas Burgeris" vietove Kaunas telefonas +37069988776 svetaine https://burgeriai.lt
+HSET restoranas:6 restoranas_id 6 pavadinimas "Azijos Skoniai" vietove Kaunas telefonas +37064599887
+HSET restoranas:7 restoranas_id 7 pavadinimas "Rytų Virtuvė" vietove Kaunas svetaine https://rytuvirtuve.lt
+HSET restoranas:8 restoranas_id 8 pavadinimas "Pietų Stotelė" vietove Kaunas telefonas +37061233445
+HSET restoranas:9 restoranas_id 9 pavadinimas "Kavos Namai" vietove Kaunas
+HSET restoranas:10 restoranas_id 10 pavadinimas "Itališka Virtuvė" vietove Kaunas telefonas +37061122334 svetaine https://itališkavirtuve.lt
+HSET restoranas:11 restoranas_id 11 pavadinimas "Skanumynų užeiga" vietove Kaunas telefonas +37061234567
+HSET restoranas:12 restoranas_id 12 pavadinimas "Pica Express" vietove Kaunas svetaine https://picaexpress.lt
+HSET restoranas:13 restoranas_id 13 pavadinimas "Bistro 24" vietove Kaunas telefonas +37060011223
+HSET restoranas:14 restoranas_id 14 pavadinimas "Gardus Kampas" vietove Kaunas
+HSET restoranas:15 restoranas_id 15 pavadinimas "Sultingas Burgeris" vietove Kaunas telefonas +37069988776 svetaine https://burgeriai.lt
+HSET restoranas:16 restoranas_id 16 pavadinimas "Azijos Skoniai" vietove Kaunas telefonas +37064599887
+HSET restoranas:17 restoranas_id 17 pavadinimas "Rytų Virtuvė" vietove Kaunas svetaine https://rytuvirtuve.lt
+HSET restoranas:18 restoranas_id 18 pavadinimas "Pietų Stotelė" vietove Kaunas telefonas +37061233445
+HSET restoranas:19 restoranas_id 19 pavadinimas "Kavos Namai" vietove Kaunas
+HSET restoranas:20 restoranas_id 20 pavadinimas "Itališka Virtuvė" vietove Kaunas telefonas +37061122334 svetaine https://italiskavirtuve.lt
+HSET restoranas:21 restoranas_id 21 pavadinimas "Skanus Taškas" vietove Kaunas
+HSET restoranas:22 restoranas_id 22 pavadinimas "Pietūs Greitai" vietove Kaunas telefonas +37061299887
+HSET restoranas:23 restoranas_id 23 pavadinimas "Blyninė Pas Močiutę" vietove Kaunas telefonas +37060011221 svetaine https://blynine.lt
+HSET restoranas:24 restoranas_id 24 pavadinimas "Šeimos Bistro" vietove Kaunas
+HSET restoranas:25 restoranas_id 25 pavadinimas "Kebabų Karalius" vietove Kaunas telefonas +37069988712 svetaine https://kebabu-karalius.lt
+HSET restoranas:26 restoranas_id 26 pavadinimas "Picerija Napoli" vietove Kaunas telefonas +37061233411 svetaine https://napoli.lt
+HSET restoranas:27 restoranas_id 27 pavadinimas "Burger House" vietove Kaunas svetaine https://burgerhouse.lt
+HSET restoranas:28 restoranas_id 28 pavadinimas "Sushi Planet" vietove Kaunas telefonas +37061199887
+HSET restoranas:29 restoranas_id 29 pavadinimas "Ramen Spot" vietove Kaunas svetaine https://ramenspot.lt
+HSET restoranas:30 restoranas_id 30 pavadinimas "Kaimiška Virtuvė" vietove Kaunas telefonas +37061233499
+HSET restoranas:31 restoranas_id 31 pavadinimas "Pietūs Studentams" vietove Kaunas
+HSET restoranas:32 restoranas_id 32 pavadinimas "Vegano Rožė" vietove Kaunas telefonas +37069988700 svetaine https://vegano-roze.lt
+HSET restoranas:33 restoranas_id 33 pavadinimas "Kavos Studija" vietove Kaunas
+HSET restoranas:34 restoranas_id 34 pavadinimas "Pica Milano" vietove Kaunas telefonas +37061233412 svetaine https://milano.lt
+HSET restoranas:35 restoranas_id 35 pavadinimas "Šašlykų Pašvaistė" vietove Kaunas
+HSET restoranas:36 restoranas_id 36 pavadinimas "Kebabinė 24/7" vietove Kaunas telefonas +37061122345
+HSET restoranas:37 restoranas_id 37 pavadinimas "Azijos Bistro" vietove Kaunas svetaine https://azijosbistro.lt
+HSET restoranas:38 restoranas_id 38 pavadinimas "Pietūs Į Namus" vietove Kaunas telefonas +37061233488
+HSET restoranas:39 restoranas_id 39 pavadinimas "Skanioji Pica" vietove Kaunas svetaine https://skaniapica.lt
+HSET restoranas:40 restoranas_id 40 pavadinimas "Burgerio Stotelė" vietove Kaunas telefonas +37069988744
+HSET restoranas:41 restoranas_id 41 pavadinimas "Sushi Zen" vietove Kaunas svetaine https://sushizen.lt
+HSET restoranas:42 restoranas_id 42 pavadinimas "Rytietiški Skoniai" vietove Kaunas telefonas +37061233401
+HSET restoranas:43 restoranas_id 43 pavadinimas "Pietų Karštis" vietove Kaunas
+HSET restoranas:44 restoranas_id 44 pavadinimas "Kebabų Vila" vietove Kaunas telefonas +37061122399 svetaine https://kebabu-vila.lt
+HSET restoranas:45 restoranas_id 45 pavadinimas "Picerija Roma" vietove Kaunas svetaine https://roma.lt
+HSET restorano_uzsakymas:12 restorano_uzsakymas_id 12 uzsakymo_nr 1000000000000012 uzsakymo_data 2024-08-01 kaina 310.00 ivykdytas 0 tiekejas_id 12
+HSET restorano_uzsakymas:14 restorano_uzsakymas_id 14 uzsakymo_nr 1000000000000014 uzsakymo_data 2024-09-05 kaina 200.00 ivykdytas 1 tiekejas_id 14
+HSET restorano_uzsakymas:17 restorano_uzsakymas_id 17 uzsakymo_nr 1000000000000017 uzsakymo_data 2024-10-25 kaina 330.00 ivykdytas 1 tiekejas_id 17
+HSET restorano_uzsakymas:19 restorano_uzsakymas_id 19 uzsakymo_nr 1000000000000019 uzsakymo_data 2024-12-01 kaina 880.00 ivykdytas 1 tiekejas_id 19
+HSET restorano_uzsakymas:21 restorano_uzsakymas_id 21 uzsakymo_nr 1000000000000021 uzsakymo_data 2023-01-05 kaina 540.20 ivykdytas 1 tiekejas_id 12
+HSET restorano_uzsakymas:22 restorano_uzsakymas_id 22 uzsakymo_nr 1000000000000022 uzsakymo_data 2023-01-18 kaina 1200.00 ivykdytas 0 tiekejas_id 33
+HSET restorano_uzsakymas:29 restorano_uzsakymas_id 29 uzsakymo_nr 1000000000000029 uzsakymo_data 2023-04-22 kaina 430.00 ivykdytas 0 tiekejas_id 44
+HSET restorano_uzsakymas:33 restorano_uzsakymas_id 33 uzsakymo_nr 1000000000000033 uzsakymo_data 2023-06-15 kaina 1440.00 ivykdytas 1 tiekejas_id 88
+HSET restorano_uzsakymas:44 restorano_uzsakymas_id 44 uzsakymo_nr 1000000000000044 uzsakymo_data 2023-11-11 kaina 980.50 ivykdytas 1 tiekejas_id 2
+HSET restorano_uzsakymas:45 restorano_uzsakymas_id 45 uzsakymo_nr 1000000000000045 uzsakymo_data 2023-11-25 kaina 150.00 ivykdytas 0 tiekejas_id 160
+HSET restorano_uzsakymas:52 restorano_uzsakymas_id 52 uzsakymo_nr 1000000000000052 uzsakymo_data 2024-02-20 kaina 310.00 ivykdytas 0 tiekejas_id 188
+HSET restorano_uzsakymas:55 restorano_uzsakymas_id 55 uzsakymo_nr 1000000000000055 uzsakymo_data 2024-04-01 kaina 990.00 ivykdytas 0 tiekejas_id 170
+HSET restorano_uzsakymas:56 restorano_uzsakymas_id 56 uzsakymo_nr 1000000000000056 uzsakymo_data 2024-04-15 kaina 1230.00 ivykdytas 1 tiekejas_id 33
+HSET restorano_uzsakymas:61 restorano_uzsakymas_id 61 uzsakymo_nr 1000000000000061 uzsakymo_data 2024-06-22 kaina 560.40 ivykdytas 1 tiekejas_id 121
+HSET restorano_uzsakymas:65 restorano_uzsakymas_id 65 uzsakymo_nr 1000000000000065 uzsakymo_data 2024-08-16 kaina 150.00 ivykdytas 0 tiekejas_id 99
+HSET restorano_uzsakymas:66 restorano_uzsakymas_id 66 uzsakymo_nr 1000000000000066 uzsakymo_data 2024-08-30 kaina 220.00 ivykdytas 1 tiekejas_id 188
+HSET restorano_uzsakymas:73 restorano_uzsakymas_id 73 uzsakymo_nr 1000000000000073 uzsakymo_data 2024-11-28 kaina 1440.00 ivykdytas 1 tiekejas_id 188
+HSET restorano_uzsakymas:77 restorano_uzsakymas_id 77 uzsakymo_nr 1000000000000077 uzsakymo_data 2025-01-18 kaina 330.00 ivykdytas 1 tiekejas_id 19
+HSET restorano_uzsakymas:88 restorano_uzsakymas_id 88 uzsakymo_nr 1000000000000088 uzsakymo_data 2025-06-12 kaina 1999.99 ivykdytas 1 tiekejas_id 33
+HSET restorano_uzsakymas:99 restorano_uzsakymas_id 99 uzsakymo_nr 1000000000000099 uzsakymo_data 2025-11-05 kaina 880.00 ivykdytas 1 tiekejas_id 84
+HSET restorano_uzsakymas:101 restorano_uzsakymas_id 101 uzsakymo_nr 1000000000000101 uzsakymo_data 2025-12-01 kaina 560.40 ivykdytas 1 tiekejas_id 160
+HSET restorano_uzsakymas:102 restorano_uzsakymas_id 102 uzsakymo_nr 1000000000000102 uzsakymo_data 2025-12-14 kaina 1200.00 ivykdytas 0 tiekejas_id 33
+HSET restorano_uzsakymas:112 restorano_uzsakymas_id 112 uzsakymo_nr 1000000000000112 uzsakymo_data 2023-04-26 kaina 310.00 ivykdytas 0 tiekejas_id 33
+HSET restorano_uzsakymas:118 restorano_uzsakymas_id 118 uzsakymo_nr 1000000000000118 uzsakymo_data 2023-07-17 kaina 450.00 ivykdytas 0 tiekejas_id 7
+HSET restorano_uzsakymas:121 restorano_uzsakymas_id 121 uzsakymo_nr 1000000000000121 uzsakymo_data 2023-08-28 kaina 560.40 ivykdytas 1 tiekejas_id 3
+HSET restorano_uzsakymas:132 restorano_uzsakymas_id 132 uzsakymo_nr 1000000000000132 uzsakymo_data 2024-01-27 kaina 310.00 ivykdytas 0 tiekejas_id 140
+HSET restorano_uzsakymas:140 restorano_uzsakymas_id 140 uzsakymo_nr 1000000000000140 uzsakymo_data 2024-05-17 kaina 199.00 ivykdytas 1 tiekejas_id 101
+HSET restorano_uzsakymas:144 restorano_uzsakymas_id 144 uzsakymo_nr 1000000000000144 uzsakymo_data 2024-07-12 kaina 980.50 ivykdytas 1 tiekejas_id 14
+HSET restorano_uzsakymas:155 restorano_uzsakymas_id 155 uzsakymo_nr 1000000000000155 uzsakymo_data 2024-12-13 kaina 990.00 ivykdytas 0 tiekejas_id 7
+HSET restorano_uzsakymas:165 restorano_uzsakymas_id 165 uzsakymo_nr 1000000000000165 uzsakymo_data 2025-05-02 kaina 150.00 ivykdytas 0 tiekejas_id 61
+HSET restorano_uzsakymas:176 restorano_uzsakymas_id 176 uzsakymo_nr 1000000000000176 uzsakymo_data 2025-10-03 kaina 1230.00 ivykdytas 1 tiekejas_id 33
+HSET restorano_uzsakymas:177 restorano_uzsakymas_id 177 uzsakymo_nr 1000000000000177 uzsakymo_data 2025-10-17 kaina 330.00 ivykdytas 1 tiekejas_id 101
+HSET restorano_uzsakymas:187 restorano_uzsakymas_id 187 uzsakymo_nr 1000000000000187 uzsakymo_data 2023-03-03 kaina 780.00 ivykdytas 1 tiekejas_id 142
+HSET restorano_uzsakymas:188 restorano_uzsakymas_id 188 uzsakymo_nr 1000000000000188 uzsakymo_data 2023-03-17 kaina 1999.99 ivykdytas 1 tiekejas_id 19
+HSET restorano_uzsakymas:198 restorano_uzsakymas_id 198 uzsakymo_nr 1000000000000198 uzsakymo_data 2023-08-04 kaina 450.00 ivykdytas 0 tiekejas_id 12
+HSET restorano_uzsakymas:199 restorano_uzsakymas_id 199 uzsakymo_nr 1000000000000199 uzsakymo_data 2023-08-18 kaina 880.00 ivykdytas 1 tiekejas_id 33
+HSET tiekejas:2 tiekejas_id 2 vardas "UAB Maisto Vizija" imones_pavadinimas "Maisto Vizija" vietove Kaunas telefonas +37060000002 el_pastas info@maistovizija.lt
+HSET tiekejas:3 tiekejas_id 3 vardas Asta pavarde Kazlauskienė vietove Kaunas telefonas +37060000003 el_pastas asta.k@example.com
+HSET tiekejas:7 tiekejas_id 7 vardas Rūta pavarde Barkauskaitė vietove Kaunas telefonas +37060000007 el_pastas ruta.b@example.com
+HSET tiekejas:12 tiekejas_id 12 imones_pavadinimas "UAB Švaros Prekės" vietove Kaunas telefonas +37060000012 el_pastas kontaktai@svarosprekes.lt
+HSET tiekejas:14 tiekejas_id 14 imones_pavadinimas "UAB Maisto Linija" vietove Kaunas telefonas +37060000014 el_pastas info@maistolinija.lt
+HSET tiekejas:17 tiekejas_id 17 vardas Saulius pavarde Grigaitis vietove Kaunas telefonas +37060000017 el_pastas saulius.g@example.com
+HSET tiekejas:19 tiekejas_id 19 vardas Gabija pavarde Kvedaraitė vietove Kaunas telefonas +37060000019 el_pastas gabija.k@example.com
+HSET tiekejas:33 tiekejas_id 33 vardas Rokas pavarde Stankevičius vietove Kaunas telefonas +37060000033 el_pastas rokas.s@example.com
+HSET tiekejas:44 tiekejas_id 44 imones_pavadinimas "UAB Švaros Ekspertai" vietove Kaunas telefonas +37060000044 el_pastas kontaktai@svarosexpertai.lt
+HSET tiekejas:61 tiekejas_id 61 vardas Jonė pavarde Masiulytė vietove Kaunas telefonas +37060000061 el_pastas jone.m@example.com
+HSET tiekejas:84 tiekejas_id 84 imones_pavadinimas "UAB Švaros Grupė" vietove Kaunas telefonas +37060000084 el_pastas kontaktai@svarosgrupe.lt
+HSET tiekejas:88 tiekejas_id 88 imones_pavadinimas "UAB Maisto Prekyba" vietove Kaunas telefonas +37060000088 el_pastas info@maistoprekyba.lt
+HSET tiekejas:99 tiekejas_id 99 vardas Viktorija pavarde Masiulytė vietove Kaunas telefonas +37060000099 el_pastas viktorija.m@example.com
+HSET tiekejas:101 tiekejas_id 101 vardas Jonas pavarde Kvietkus vietove Kaunas telefonas +37060000101 el_pastas jonas.kv@example.com
+HSET tiekejas:121 tiekejas_id 121 vardas Austėja pavarde Kuzmickaitė vietove Kaunas telefonas +37060000121 el_pastas austeja.k@example.com
+HSET tiekejas:140 tiekejas_id 140 imones_pavadinimas "UAB Švaros Partneriai Pro" vietove Kaunas telefonas +37060000140 el_pastas info@svarosp.lt
+HSET tiekejas:142 tiekejas_id 142 imones_pavadinimas "UAB Inventorius Global Pro" vietove Kaunas telefonas +37060000142 el_pastas info@inventglobalpro.lt
+HSET tiekejas:160 tiekejas_id 160 imones_pavadinimas "UAB Inventorius Tiekimo Projektai" vietove Kaunas telefonas +37060000160 el_pastas info@inventtp.lt
+HSET tiekejas:170 tiekejas_id 170 imones_pavadinimas "UAB Švaros Partneriai Max" vietove Kaunas telefonas +37060000170 el_pastas info@svarospmax.lt
+HSET tiekejas:188 tiekejas_id 188 imones_pavadinimas "UAB Švaros Logistikos Pro" vietove Kaunas telefonas +37060000188 el_pastas info@svaroslp.lt
+HSET uzsakymo_eilute:1 uzsakymo_eilute_id 1 kiekis 12.000 ivykdytas 1 kaina 24.50 restorano_uzsakymas_id 45 inventorius_id 33
+HSET uzsakymo_eilute:2 uzsakymo_eilute_id 2 kiekis 5.000 ivykdytas 0 kaina 14.90 restorano_uzsakymas_id 12 produktas_id 88
+HSET uzsakymo_eilute:3 uzsakymo_eilute_id 3 kiekis 8.000 ivykdytas 1 kaina 9.99 restorano_uzsakymas_id 101 inventorius_id 4
+HSET uzsakymo_eilute:4 uzsakymo_eilute_id 4 kiekis 3.000 ivykdytas 1 kaina 5.49 restorano_uzsakymas_id 77 produktas_id 120
+HSET uzsakymo_eilute:5 uzsakymo_eilute_id 5 kiekis 15.000 ivykdytas 0 kaina 32.00 restorano_uzsakymas_id 88 inventorius_id 150
+HSET uzsakymo_eilute:6 uzsakymo_eilute_id 6 kiekis 2.000 ivykdytas 1 kaina 4.20 restorano_uzsakymas_id 33 produktas_id 15
+HSET uzsakymo_eilute:7 uzsakymo_eilute_id 7 kiekis 6.000 ivykdytas 1 kaina 12.75 restorano_uzsakymas_id 19 inventorius_id 87
+HSET uzsakymo_eilute:8 uzsakymo_eilute_id 8 kiekis 10.000 ivykdytas 0 kaina 18.90 restorano_uzsakymas_id 140 produktas_id 200
+HSET uzsakymo_eilute:9 uzsakymo_eilute_id 9 kiekis 4.000 ivykdytas 1 kaina 7.80 restorano_uzsakymas_id 52 inventorius_id 12
+HSET uzsakymo_eilute:10 uzsakymo_eilute_id 10 kiekis 7.000 ivykdytas 1 kaina 9.40 restorano_uzsakymas_id 61 produktas_id 33
+HSET uzsakymo_eilute:13 uzsakymo_eilute_id 13 kiekis 3.000 ivykdytas 1 kaina 6.30 restorano_uzsakymas_id 12 inventorius_id 55
+HSET uzsakymo_eilute:15 uzsakymo_eilute_id 15 kiekis 5.000 ivykdytas 1 kaina 10.00 restorano_uzsakymas_id 33 inventorius_id 102
+HSET uzsakymo_eilute:16 uzsakymo_eilute_id 16 kiekis 8.000 ivykdytas 1 kaina 12.90 restorano_uzsakymas_id 44 produktas_id 7
+HSET uzsakymo_eilute:17 uzsakymo_eilute_id 17 kiekis 20.000 ivykdytas 0 kaina 40.00 restorano_uzsakymas_id 155 inventorius_id 3
+HSET uzsakymo_eilute:19 uzsakymo_eilute_id 19 kiekis 9.000 ivykdytas 1 kaina 18.20 restorano_uzsakymas_id 177 inventorius_id 88
+HSET uzsakymo_eilute:20 uzsakymo_eilute_id 20 kiekis 12.000 ivykdytas 0 kaina 21.99 restorano_uzsakymas_id 188 produktas_id 199
+HSET uzsakymo_eilute:21 uzsakymo_eilute_id 21 kiekis 7.000 ivykdytas 1 kaina 14.00 restorano_uzsakymas_id 199 inventorius_id 44
+HSET uzsakymo_eilute:41 uzsakymo_eilute_id 41 kiekis 12.000 ivykdytas 1 kaina 24.50 restorano_uzsakymas_id 17 inventorius_id 33
+HSET uzsakymo_eilute:42 uzsakymo_eilute_id 42 kiekis 5.000 ivykdytas 0 kaina 14.90 restorano_uzsakymas_id 88 produktas_id 120
+HSET uzsakymo_eilute:43 uzsakymo_eilute_id 43 kiekis 8.000 ivykdytas 1 kaina 9.99 restorano_uzsakymas_id 45 inventorius_id 4
+HSET uzsakymo_eilute:44 uzsakymo_eilute_id 44 kiekis 3.000 ivykdytas 1 kaina 5.49 restorano_uzsakymas_id 102 produktas_id 33
+HSET uzsakymo_eilute:45 uzsakymo_eilute_id 45 kiekis 15.000 ivykdytas 0 kaina 32.00 restorano_uzsakymas_id 56 inventorius_id 150
+HSET uzsakymo_eilute:46 uzsakymo_eilute_id 46 kiekis 2.000 ivykdytas 1 kaina 4.20 restorano_uzsakymas_id 19 produktas_id 15
+HSET uzsakymo_eilute:47 uzsakymo_eilute_id 47 kiekis 6.000 ivykdytas 1 kaina 12.75 restorano_uzsakymas_id 77 inventorius_id 87
+HSET uzsakymo_eilute:48 uzsakymo_eilute_id 48 kiekis 10.000 ivykdytas 0 kaina 18.90 restorano_uzsakymas_id 33 produktas_id 200
+HSET uzsakymo_eilute:49 uzsakymo_eilute_id 49 kiekis 4.000 ivykdytas 1 kaina 7.80 restorano_uzsakymas_id 112 inventorius_id 12
+HSET uzsakymo_eilute:53 uzsakymo_eilute_id 53 kiekis 3.000 ivykdytas 1 kaina 6.30 restorano_uzsakymas_id 65 inventorius_id 55
+HSET uzsakymo_eilute:55 uzsakymo_eilute_id 55 kiekis 5.000 ivykdytas 1 kaina 10.00 restorano_uzsakymas_id 73 inventorius_id 102
+HSET uzsakymo_eilute:56 uzsakymo_eilute_id 56 kiekis 8.000 ivykdytas 1 kaina 12.90 restorano_uzsakymas_id 29 produktas_id 7
+HSET uzsakymo_eilute:59 uzsakymo_eilute_id 59 kiekis 9.000 ivykdytas 1 kaina 18.20 restorano_uzsakymas_id 144 inventorius_id 88
+HSET uzsakymo_eilute:60 uzsakymo_eilute_id 60 kiekis 12.000 ivykdytas 0 kaina 21.99 restorano_uzsakymas_id 33 produktas_id 199
+HSET uzsakymo_eilute:61 uzsakymo_eilute_id 61 kiekis 7.000 ivykdytas 1 kaina 14.00 restorano_uzsakymas_id 55 inventorius_id 44
+HSET uzsakymo_eilute:62 uzsakymo_eilute_id 62 kiekis 4.000 ivykdytas 1 kaina 8.50 restorano_uzsakymas_id 88 produktas_id 166
+HSET uzsakymo_eilute:63 uzsakymo_eilute_id 63 kiekis 13.000 ivykdytas 0 kaina 26.00 restorano_uzsakymas_id 102 inventorius_id 120
+HSET uzsakymo_eilute:64 uzsakymo_eilute_id 64 kiekis 5.000 ivykdytas 1 kaina 9.99 restorano_uzsakymas_id 19 produktas_id 201
+HSET uzsakymo_eilute:65 uzsakymo_eilute_id 65 kiekis 18.000 ivykdytas 1 kaina 36.00 restorano_uzsakymas_id 77 inventorius_id 15
+HSET uzsakymo_eilute:66 uzsakymo_eilute_id 66 kiekis 3.000 ivykdytas 0 kaina 6.70 restorano_uzsakymas_id 140 produktas_id 88
+HSET uzsakymo_eilute:68 uzsakymo_eilute_id 68 kiekis 6.000 ivykdytas 1 kaina 11.20 restorano_uzsakymas_id 21 produktas_id 33
+HSET uzsakymo_eilute:69 uzsakymo_eilute_id 69 kiekis 4.000 ivykdytas 0 kaina 7.40 restorano_uzsakymas_id 118 inventorius_id 144
+HSET uzsakymo_eilute:71 uzsakymo_eilute_id 71 kiekis 11.000 ivykdytas 1 kaina 22.50 restorano_uzsakymas_id 33 inventorius_id 77
+HSET uzsakymo_eilute:72 uzsakymo_eilute_id 72 kiekis 7.000 ivykdytas 0 kaina 13.40 restorano_uzsakymas_id 17 produktas_id 122
+HSET uzsakymo_eilute:75 uzsakymo_eilute_id 75 kiekis 8.000 ivykdytas 0 kaina 16.00 restorano_uzsakymas_id 140 inventorius_id 33
+HSET uzsakymo_eilute:76 uzsakymo_eilute_id 76 kiekis 3.000 ivykdytas 1 kaina 5.90 restorano_uzsakymas_id 112 produktas_id 15
+HSET uzsakymo_eilute:77 uzsakymo_eilute_id 77 kiekis 17.000 ivykdytas 1 kaina 34.00 restorano_uzsakymas_id 21 inventorius_id 102
+HSET uzsakymo_eilute:78 uzsakymo_eilute_id 78 kiekis 6.000 ivykdytas 0 kaina 12.40 restorano_uzsakymas_id 118 produktas_id 7
+HSET uzsakymo_eilute:79 uzsakymo_eilute_id 79 kiekis 9.000 ivykdytas 1 kaina 18.10 restorano_uzsakymas_id 65 inventorius_id 3
+HSET uzsakymo_eilute:81 uzsakymo_eilute_id 81 kiekis 6.000 ivykdytas 1 kaina 12.40 restorano_uzsakymas_id 14 inventorius_id 44
+HSET uzsakymo_eilute:82 uzsakymo_eilute_id 82 kiekis 4.000 ivykdytas 0 kaina 7.90 restorano_uzsakymas_id 55 produktas_id 166
+HSET uzsakymo_eilute:83 uzsakymo_eilute_id 83 kiekis 15.000 ivykdytas 1 kaina 30.00 restorano_uzsakymas_id 102 inventorius_id 120
+HSET uzsakymo_eilute:84 uzsakymo_eilute_id 84 kiekis 3.000 ivykdytas 1 kaina 6.10 restorano_uzsakymas_id 77 produktas_id 201
+HSET uzsakymo_eilute:85 uzsakymo_eilute_id 85 kiekis 18.000 ivykdytas 0 kaina 36.00 restorano_uzsakymas_id 33 inventorius_id 15
+HSET uzsakymo_eilute:86 uzsakymo_eilute_id 86 kiekis 7.000 ivykdytas 1 kaina 13.80 restorano_uzsakymas_id 19 produktas_id 88
+HSET uzsakymo_eilute:88 uzsakymo_eilute_id 88 kiekis 6.000 ivykdytas 0 kaina 11.30 restorano_uzsakymas_id 140 produktas_id 33
+HSET uzsakymo_eilute:89 uzsakymo_eilute_id 89 kiekis 4.000 ivykdytas 1 kaina 7.60 restorano_uzsakymas_id 88 inventorius_id 144
+HSET uzsakymo_eilute:91 uzsakymo_eilute_id 91 kiekis 11.000 ivykdytas 1 kaina 22.10 restorano_uzsakymas_id 21 inventorius_id 77
+HSET uzsakymo_eilute:92 uzsakymo_eilute_id 92 kiekis 7.000 ivykdytas 0 kaina 13.20 restorano_uzsakymas_id 118 produktas_id 122
+HSET uzsakymo_eilute:95 uzsakymo_eilute_id 95 kiekis 8.000 ivykdytas 0 kaina 16.00 restorano_uzsakymas_id 33 inventorius_id 33
+HSET uzsakymo_eilute:96 uzsakymo_eilute_id 96 kiekis 3.000 ivykdytas 1 kaina 5.80 restorano_uzsakymas_id 17 produktas_id 15
+HSET uzsakymo_eilute:97 uzsakymo_eilute_id 97 kiekis 17.000 ivykdytas 1 kaina 34.00 restorano_uzsakymas_id 55 inventorius_id 102
+HSET uzsakymo_eilute:98 uzsakymo_eilute_id 98 kiekis 6.000 ivykdytas 0 kaina 12.30 restorano_uzsakymas_id 88 produktas_id 7
+HSET uzsakymo_eilute:99 uzsakymo_eilute_id 99 kiekis 9.000 ivykdytas 1 kaina 18.10 restorano_uzsakymas_id 140 inventorius_id 3
+HSET uzsakymo_eilute:101 uzsakymo_eilute_id 101 kiekis 7.000 ivykdytas 1 kaina 14.00 restorano_uzsakymas_id 19 inventorius_id 44
+HSET uzsakymo_eilute:102 uzsakymo_eilute_id 102 kiekis 4.000 ivykdytas 0 kaina 8.10 restorano_uzsakymas_id 33 produktas_id 166
+HSET uzsakymo_eilute:103 uzsakymo_eilute_id 103 kiekis 13.000 ivykdytas 1 kaina 26.00 restorano_uzsakymas_id 77 inventorius_id 120
+HSET uzsakymo_eilute:104 uzsakymo_eilute_id 104 kiekis 5.000 ivykdytas 1 kaina 9.80 restorano_uzsakymas_id 102 produktas_id 201
+HSET uzsakymo_eilute:105 uzsakymo_eilute_id 105 kiekis 18.000 ivykdytas 0 kaina 36.00 restorano_uzsakymas_id 118 inventorius_id 15
+HSET uzsakymo_eilute:106 uzsakymo_eilute_id 106 kiekis 3.000 ivykdytas 1 kaina 6.90 restorano_uzsakymas_id 65 produktas_id 88
+HSET uzsakymo_eilute:108 uzsakymo_eilute_id 108 kiekis 6.000 ivykdytas 0 kaina 11.50 restorano_uzsakymas_id 17 produktas_id 33
+HSET uzsakymo_eilute:109 uzsakymo_eilute_id 109 kiekis 4.000 ivykdytas 1 kaina 7.50 restorano_uzsakymas_id 140 inventorius_id 144
+HSET uzsakymo_eilute:111 uzsakymo_eilute_id 111 kiekis 11.000 ivykdytas 1 kaina 22.30 restorano_uzsakymas_id 88 inventorius_id 77
+HSET uzsakymo_eilute:112 uzsakymo_eilute_id 112 kiekis 7.000 ivykdytas 0 kaina 13.60 restorano_uzsakymas_id 55 produktas_id 122
+HSET uzsakymo_eilute:115 uzsakymo_eilute_id 115 kiekis 8.000 ivykdytas 0 kaina 16.00 restorano_uzsakymas_id 17 inventorius_id 33
+HSET uzsakymo_eilute:116 uzsakymo_eilute_id 116 kiekis 3.000 ivykdytas 1 kaina 5.70 restorano_uzsakymas_id 21 produktas_id 15
+HSET uzsakymo_eilute:117 uzsakymo_eilute_id 117 kiekis 17.000 ivykdytas 1 kaina 34.00 restorano_uzsakymas_id 65 inventorius_id 102
+HSET uzsakymo_eilute:118 uzsakymo_eilute_id 118 kiekis 6.000 ivykdytas 0 kaina 12.20 restorano_uzsakymas_id 88 produktas_id 7
+HSET uzsakymo_eilute:119 uzsakymo_eilute_id 119 kiekis 9.000 ivykdytas 1 kaina 18.20 restorano_uzsakymas_id 102 inventorius_id 3
+HSET uzsakymo_eilute:121 uzsakymo_eilute_id 121 kiekis 6.000 ivykdytas 1 kaina 12.40 restorano_uzsakymas_id 14 inventorius_id 44
+HSET uzsakymo_eilute:122 uzsakymo_eilute_id 122 kiekis 4.000 ivykdytas 0 kaina 7.90 restorano_uzsakymas_id 22 produktas_id 166
+HSET uzsakymo_eilute:123 uzsakymo_eilute_id 123 kiekis 15.000 ivykdytas 1 kaina 30.00 restorano_uzsakymas_id 33 inventorius_id 120
+HSET uzsakymo_eilute:124 uzsakymo_eilute_id 124 kiekis 3.000 ivykdytas 1 kaina 6.10 restorano_uzsakymas_id 44 produktas_id 201
+HSET uzsakymo_eilute:125 uzsakymo_eilute_id 125 kiekis 18.000 ivykdytas 0 kaina 36.00 restorano_uzsakymas_id 55 inventorius_id 15
+HSET uzsakymo_eilute:126 uzsakymo_eilute_id 126 kiekis 7.000 ivykdytas 1 kaina 13.80 restorano_uzsakymas_id 66 produktas_id 88
+HSET uzsakymo_eilute:128 uzsakymo_eilute_id 128 kiekis 6.000 ivykdytas 0 kaina 11.30 restorano_uzsakymas_id 88 produktas_id 33
+HSET uzsakymo_eilute:129 uzsakymo_eilute_id 129 kiekis 4.000 ivykdytas 1 kaina 7.60 restorano_uzsakymas_id 99 inventorius_id 144
+HSET uzsakymo_eilute:131 uzsakymo_eilute_id 131 kiekis 11.000 ivykdytas 1 kaina 22.10 restorano_uzsakymas_id 121 inventorius_id 77
+HSET uzsakymo_eilute:132 uzsakymo_eilute_id 132 kiekis 7.000 ivykdytas 0 kaina 13.20 restorano_uzsakymas_id 132 produktas_id 122
+HSET uzsakymo_eilute:135 uzsakymo_eilute_id 135 kiekis 8.000 ivykdytas 0 kaina 16.00 restorano_uzsakymas_id 165 inventorius_id 33
+HSET uzsakymo_eilute:136 uzsakymo_eilute_id 136 kiekis 3.000 ivykdytas 1 kaina 5.80 restorano_uzsakymas_id 176 produktas_id 15
+HSET uzsakymo_eilute:137 uzsakymo_eilute_id 137 kiekis 17.000 ivykdytas 1 kaina 34.00 restorano_uzsakymas_id 187 inventorius_id 102
+HSET uzsakymo_eilute:138 uzsakymo_eilute_id 138 kiekis 6.000 ivykdytas 0 kaina 12.30 restorano_uzsakymas_id 198 produktas_id 7
+HSET uzsakymo_eilute:139 uzsakymo_eilute_id 139 kiekis 7.000 ivykdytas 1 kaina 14.00 restorano_uzsakymas_id 14 inventorius_id 44
+HSET uzsakymo_eilute:140 uzsakymo_eilute_id 140 kiekis 4.000 ivykdytas 0 kaina 8.10 restorano_uzsakymas_id 22 produktas_id 166
+HSET uzsakymo_eilute:141 uzsakymo_eilute_id 141 kiekis 13.000 ivykdytas 1 kaina 26.00 restorano_uzsakymas_id 33 inventorius_id 120
+HSET uzsakymo_eilute:142 uzsakymo_eilute_id 142 kiekis 5.000 ivykdytas 1 kaina 9.80 restorano_uzsakymas_id 44 produktas_id 201
+HSET uzsakymo_eilute:143 uzsakymo_eilute_id 143 kiekis 18.000 ivykdytas 0 kaina 36.00 restorano_uzsakymas_id 55 inventorius_id 15
+HSET uzsakymo_eilute:144 uzsakymo_eilute_id 144 kiekis 3.000 ivykdytas 1 kaina 6.90 restorano_uzsakymas_id 66 produktas_id 88
+HSET uzsakymo_eilute:146 uzsakymo_eilute_id 146 kiekis 6.000 ivykdytas 0 kaina 11.50 restorano_uzsakymas_id 88 produktas_id 33
+HSET uzsakymo_eilute:147 uzsakymo_eilute_id 147 kiekis 4.000 ivykdytas 1 kaina 7.50 restorano_uzsakymas_id 99 inventorius_id 144
+HSET uzsakymo_eilute:149 uzsakymo_eilute_id 149 kiekis 11.000 ivykdytas 1 kaina 22.30 restorano_uzsakymas_id 121 inventorius_id 77
+HSET uzsakymo_eilute:150 uzsakymo_eilute_id 150 kiekis 7.000 ivykdytas 0 kaina 13.60 restorano_uzsakymas_id 132 produktas_id 122
+HSET uzsakymo_eilute:153 uzsakymo_eilute_id 153 kiekis 8.000 ivykdytas 0 kaina 16.00 restorano_uzsakymas_id 165 inventorius_id 33
+HSET uzsakymo_eilute:154 uzsakymo_eilute_id 154 kiekis 3.000 ivykdytas 1 kaina 5.70 restorano_uzsakymas_id 176 produktas_id 15
+HSET uzsakymo_eilute:155 uzsakymo_eilute_id 155 kiekis 17.000 ivykdytas 1 kaina 34.00 restorano_uzsakymas_id 187 inventorius_id 102
+HSET uzsakymo_eilute:156 uzsakymo_eilute_id 156 kiekis 6.000 ivykdytas 0 kaina 12.20 restorano_uzsakymas_id 198 produktas_id 7
+HSET uzsakymo_eilute:157 uzsakymo_eilute_id 157 kiekis 6.000 ivykdytas 1 kaina 12.40 restorano_uzsakymas_id 14 inventorius_id 44
+HSET uzsakymo_eilute:158 uzsakymo_eilute_id 158 kiekis 4.000 ivykdytas 0 kaina 7.90 restorano_uzsakymas_id 22 produktas_id 166
+HSET uzsakymo_eilute:159 uzsakymo_eilute_id 159 kiekis 15.000 ivykdytas 1 kaina 30.00 restorano_uzsakymas_id 33 inventorius_id 120
+HSET uzsakymo_eilute:160 uzsakymo_eilute_id 160 kiekis 3.000 ivykdytas 1 kaina 6.10 restorano_uzsakymas_id 44 produktas_id 201
+HSET uzsakymo_eilute:161 uzsakymo_eilute_id 161 kiekis 18.000 ivykdytas 0 kaina 36.00 restorano_uzsakymas_id 55 inventorius_id 15
+HSET uzsakymo_eilute:162 uzsakymo_eilute_id 162 kiekis 7.000 ivykdytas 1 kaina 13.80 restorano_uzsakymas_id 66 produktas_id 88
+HSET uzsakymo_eilute:164 uzsakymo_eilute_id 164 kiekis 6.000 ivykdytas 0 kaina 11.30 restorano_uzsakymas_id 88 produktas_id 33
+HSET uzsakymo_eilute:165 uzsakymo_eilute_id 165 kiekis 4.000 ivykdytas 1 kaina 7.60 restorano_uzsakymas_id 99 inventorius_id 144
+HSET uzsakymo_eilute:167 uzsakymo_eilute_id 167 kiekis 11.000 ivykdytas 1 kaina 22.10 restorano_uzsakymas_id 121 inventorius_id 77
+HSET uzsakymo_eilute:168 uzsakymo_eilute_id 168 kiekis 7.000 ivykdytas 0 kaina 13.20 restorano_uzsakymas_id 132 produktas_id 122
+HSET uzsakymo_eilute:171 uzsakymo_eilute_id 171 kiekis 8.000 ivykdytas 0 kaina 16.00 restorano_uzsakymas_id 165 inventorius_id 33
+HSET uzsakymo_eilute:172 uzsakymo_eilute_id 172 kiekis 3.000 ivykdytas 1 kaina 5.80 restorano_uzsakymas_id 176 produktas_id 15
+HSET uzsakymo_eilute:173 uzsakymo_eilute_id 173 kiekis 17.000 ivykdytas 1 kaina 34.00 restorano_uzsakymas_id 187 inventorius_id 102
+HSET uzsakymo_eilute:174 uzsakymo_eilute_id 174 kiekis 6.000 ivykdytas 0 kaina 12.30 restorano_uzsakymas_id 198 produktas_id 7
+HSET uzsakymo_eilute:175 uzsakymo_eilute_id 175 kiekis 7.000 ivykdytas 1 kaina 14.00 restorano_uzsakymas_id 14 inventorius_id 44
+HSET uzsakymo_eilute:176 uzsakymo_eilute_id 176 kiekis 4.000 ivykdytas 0 kaina 8.10 restorano_uzsakymas_id 22 produktas_id 166
+HSET uzsakymo_eilute:177 uzsakymo_eilute_id 177 kiekis 13.000 ivykdytas 1 kaina 26.00 restorano_uzsakymas_id 33 inventorius_id 120
+HSET uzsakymo_eilute:178 uzsakymo_eilute_id 178 kiekis 5.000 ivykdytas 1 kaina 9.80 restorano_uzsakymas_id 44 produktas_id 201
+HSET uzsakymo_eilute:179 uzsakymo_eilute_id 179 kiekis 18.000 ivykdytas 0 kaina 36.00 restorano_uzsakymas_id 55 inventorius_id 15
+HSET uzsakymo_eilute:180 uzsakymo_eilute_id 180 kiekis 3.000 ivykdytas 1 kaina 6.90 restorano_uzsakymas_id 66 produktas_id 88
+HSET uzsakymo_eilute:182 uzsakymo_eilute_id 182 kiekis 6.000 ivykdytas 0 kaina 11.50 restorano_uzsakymas_id 88 produktas_id 33
+HSET uzsakymo_eilute:183 uzsakymo_eilute_id 183 kiekis 4.000 ivykdytas 1 kaina 7.50 restorano_uzsakymas_id 99 inventorius_id 144
+HSET uzsakymo_eilute:185 uzsakymo_eilute_id 185 kiekis 11.000 ivykdytas 1 kaina 22.30 restorano_uzsakymas_id 121 inventorius_id 77
+HSET uzsakymo_eilute:186 uzsakymo_eilute_id 186 kiekis 7.000 ivykdytas 0 kaina 13.60 restorano_uzsakymas_id 132 produktas_id 122
+HSET uzsakymo_eilute:189 uzsakymo_eilute_id 189 kiekis 8.000 ivykdytas 0 kaina 16.00 restorano_uzsakymas_id 165 inventorius_id 33
+HSET uzsakymo_eilute:190 uzsakymo_eilute_id 190 kiekis 3.000 ivykdytas 1 kaina 5.70 restorano_uzsakymas_id 176 produktas_id 15
+HSET uzsakymo_eilute:191 uzsakymo_eilute_id 191 kiekis 17.000 ivykdytas 1 kaina 34.00 restorano_uzsakymas_id 187 inventorius_id 102
+HSET uzsakymo_eilute:192 uzsakymo_eilute_id 192 kiekis 6.000 ivykdytas 0 kaina 12.20 restorano_uzsakymas_id 198 produktas_id 7
+SADD restorano_uzsakymas:45:uzsakymo_eilute 1
+SADD restorano_uzsakymas:12:uzsakymo_eilute 2
+SADD restorano_uzsakymas:101:uzsakymo_eilute 3
+SADD restorano_uzsakymas:77:uzsakymo_eilute 4
+SADD restorano_uzsakymas:88:uzsakymo_eilute 5
+SADD restorano_uzsakymas:33:uzsakymo_eilute 6
+SADD restorano_uzsakymas:19:uzsakymo_eilute 7
+SADD restorano_uzsakymas:140:uzsakymo_eilute 8
+SADD restorano_uzsakymas:52:uzsakymo_eilute 9
+SADD restorano_uzsakymas:61:uzsakymo_eilute 10
+SADD restorano_uzsakymas:12:uzsakymo_eilute 13
+SADD restorano_uzsakymas:33:uzsakymo_eilute 15
+SADD restorano_uzsakymas:44:uzsakymo_eilute 16
+SADD restorano_uzsakymas:155:uzsakymo_eilute 17
+SADD restorano_uzsakymas:177:uzsakymo_eilute 19
+SADD restorano_uzsakymas:188:uzsakymo_eilute 20
+SADD restorano_uzsakymas:199:uzsakymo_eilute 21
+SADD restorano_uzsakymas:17:uzsakymo_eilute 41
+SADD restorano_uzsakymas:88:uzsakymo_eilute 42
+SADD restorano_uzsakymas:45:uzsakymo_eilute 43
+SADD restorano_uzsakymas:102:uzsakymo_eilute 44
+SADD restorano_uzsakymas:56:uzsakymo_eilute 45
+SADD restorano_uzsakymas:19:uzsakymo_eilute 46
+SADD restorano_uzsakymas:77:uzsakymo_eilute 47
+SADD restorano_uzsakymas:33:uzsakymo_eilute 48
+SADD restorano_uzsakymas:112:uzsakymo_eilute 49
+SADD restorano_uzsakymas:65:uzsakymo_eilute 53
+SADD restorano_uzsakymas:73:uzsakymo_eilute 55
+SADD restorano_uzsakymas:29:uzsakymo_eilute 56
+SADD restorano_uzsakymas:144:uzsakymo_eilute 59
+SADD restorano_uzsakymas:33:uzsakymo_eilute 60
+SADD restorano_uzsakymas:55:uzsakymo_eilute 61
+SADD restorano_uzsakymas:88:uzsakymo_eilute 62
+SADD restorano_uzsakymas:102:uzsakymo_eilute 63
+SADD restorano_uzsakymas:19:uzsakymo_eilute 64
+SADD restorano_uzsakymas:77:uzsakymo_eilute 65
+SADD restorano_uzsakymas:140:uzsakymo_eilute 66
+SADD restorano_uzsakymas:21:uzsakymo_eilute 68
+SADD restorano_uzsakymas:118:uzsakymo_eilute 69
+SADD restorano_uzsakymas:33:uzsakymo_eilute 71
+SADD restorano_uzsakymas:17:uzsakymo_eilute 72
+SADD restorano_uzsakymas:140:uzsakymo_eilute 75
+SADD restorano_uzsakymas:112:uzsakymo_eilute 76
+SADD restorano_uzsakymas:21:uzsakymo_eilute 77
+SADD restorano_uzsakymas:118:uzsakymo_eilute 78
+SADD restorano_uzsakymas:65:uzsakymo_eilute 79
+SADD restorano_uzsakymas:14:uzsakymo_eilute 81
+SADD restorano_uzsakymas:55:uzsakymo_eilute 82
+SADD restorano_uzsakymas:102:uzsakymo_eilute 83
+SADD restorano_uzsakymas:77:uzsakymo_eilute 84
+SADD restorano_uzsakymas:33:uzsakymo_eilute 85
+SADD restorano_uzsakymas:19:uzsakymo_eilute 86
+SADD restorano_uzsakymas:140:uzsakymo_eilute 88
+SADD restorano_uzsakymas:88:uzsakymo_eilute 89
+SADD restorano_uzsakymas:21:uzsakymo_eilute 91
+SADD restorano_uzsakymas:118:uzsakymo_eilute 92
+SADD restorano_uzsakymas:33:uzsakymo_eilute 95
+SADD restorano_uzsakymas:17:uzsakymo_eilute 96
+SADD restorano_uzsakymas:55:uzsakymo_eilute 97
+SADD restorano_uzsakymas:88:uzsakymo_eilute 98
+SADD restorano_uzsakymas:140:uzsakymo_eilute 99
+SADD restorano_uzsakymas:19:uzsakymo_eilute 101
+SADD restorano_uzsakymas:33:uzsakymo_eilute 102
+SADD restorano_uzsakymas:77:uzsakymo_eilute 103
+SADD restorano_uzsakymas:102:uzsakymo_eilute 104
+SADD restorano_uzsakymas:118:uzsakymo_eilute 105
+SADD restorano_uzsakymas:65:uzsakymo_eilute 106
+SADD restorano_uzsakymas:17:uzsakymo_eilute 108
+SADD restorano_uzsakymas:140:uzsakymo_eilute 109
+SADD restorano_uzsakymas:88:uzsakymo_eilute 111
+SADD restorano_uzsakymas:55:uzsakymo_eilute 112
+SADD restorano_uzsakymas:17:uzsakymo_eilute 115
+SADD restorano_uzsakymas:21:uzsakymo_eilute 116
+SADD restorano_uzsakymas:65:uzsakymo_eilute 117
+SADD restorano_uzsakymas:88:uzsakymo_eilute 118
+SADD restorano_uzsakymas:102:uzsakymo_eilute 119
+SADD restorano_uzsakymas:14:uzsakymo_eilute 121
+SADD restorano_uzsakymas:22:uzsakymo_eilute 122
+SADD restorano_uzsakymas:33:uzsakymo_eilute 123
+SADD restorano_uzsakymas:44:uzsakymo_eilute 124
+SADD restorano_uzsakymas:55:uzsakymo_eilute 125
+SADD restorano_uzsakymas:66:uzsakymo_eilute 126
+SADD restorano_uzsakymas:88:uzsakymo_eilute 128
+SADD restorano_uzsakymas:99:uzsakymo_eilute 129
+SADD restorano_uzsakymas:121:uzsakymo_eilute 131
+SADD restorano_uzsakymas:132:uzsakymo_eilute 132
+SADD restorano_uzsakymas:165:uzsakymo_eilute 135
+SADD restorano_uzsakymas:176:uzsakymo_eilute 136
+SADD restorano_uzsakymas:187:uzsakymo_eilute 137
+SADD restorano_uzsakymas:198:uzsakymo_eilute 138
+SADD restorano_uzsakymas:14:uzsakymo_eilute 139
+SADD restorano_uzsakymas:22:uzsakymo_eilute 140
+SADD restorano_uzsakymas:33:uzsakymo_eilute 141
+SADD restorano_uzsakymas:44:uzsakymo_eilute 142
+SADD restorano_uzsakymas:55:uzsakymo_eilute 143
+SADD restorano_uzsakymas:66:uzsakymo_eilute 144
+SADD restorano_uzsakymas:88:uzsakymo_eilute 146
+SADD restorano_uzsakymas:99:uzsakymo_eilute 147
+SADD restorano_uzsakymas:121:uzsakymo_eilute 149
+SADD restorano_uzsakymas:132:uzsakymo_eilute 150
+SADD restorano_uzsakymas:165:uzsakymo_eilute 153
+SADD restorano_uzsakymas:176:uzsakymo_eilute 154
+SADD restorano_uzsakymas:187:uzsakymo_eilute 155
+SADD restorano_uzsakymas:198:uzsakymo_eilute 156
+SADD restorano_uzsakymas:14:uzsakymo_eilute 157
+SADD restorano_uzsakymas:22:uzsakymo_eilute 158
+SADD restorano_uzsakymas:33:uzsakymo_eilute 159
+SADD restorano_uzsakymas:44:uzsakymo_eilute 160
+SADD restorano_uzsakymas:55:uzsakymo_eilute 161
+SADD restorano_uzsakymas:66:uzsakymo_eilute 162
+SADD restorano_uzsakymas:88:uzsakymo_eilute 164
+SADD restorano_uzsakymas:99:uzsakymo_eilute 165
+SADD restorano_uzsakymas:121:uzsakymo_eilute 167
+SADD restorano_uzsakymas:132:uzsakymo_eilute 168
+SADD restorano_uzsakymas:165:uzsakymo_eilute 171
+SADD restorano_uzsakymas:176:uzsakymo_eilute 172
+SADD restorano_uzsakymas:187:uzsakymo_eilute 173
+SADD restorano_uzsakymas:198:uzsakymo_eilute 174
+SADD restorano_uzsakymas:14:uzsakymo_eilute 175
+SADD restorano_uzsakymas:22:uzsakymo_eilute 176
+SADD restorano_uzsakymas:33:uzsakymo_eilute 177
+SADD restorano_uzsakymas:44:uzsakymo_eilute 178
+SADD restorano_uzsakymas:55:uzsakymo_eilute 179
+SADD restorano_uzsakymas:66:uzsakymo_eilute 180
+SADD restorano_uzsakymas:88:uzsakymo_eilute 182
+SADD restorano_uzsakymas:99:uzsakymo_eilute 183
+SADD restorano_uzsakymas:121:uzsakymo_eilute 185
+SADD restorano_uzsakymas:132:uzsakymo_eilute 186
+SADD restorano_uzsakymas:165:uzsakymo_eilute 189
+SADD restorano_uzsakymas:176:uzsakymo_eilute 190
+SADD restorano_uzsakymas:187:uzsakymo_eilute 191
+SADD restorano_uzsakymas:198:uzsakymo_eilute 192
