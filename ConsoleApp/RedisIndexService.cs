@@ -17,6 +17,8 @@ namespace ConsoleApp
         public const string IdxInventorius = "idx:inventorius";
         public const string IdxProduktas = "idx:produktas";
         public const string IdxNaudojamasProduktas = "idx:naudojamas_produktas";
+        public const string IdxUzsakymoEilute = "idx:uzsakymo_eilute";
+        public const string IdxRestoranoUzsakymas = "idx:restorano_uzsakymas";
 
         public static async Task EnsureIndexesAsync(ShardRouter router)
         {
@@ -58,6 +60,24 @@ namespace ConsoleApp
                     "naudojamas_produktas_id", "NUMERIC", "SORTABLE",
                     "receptas_id", "NUMERIC", "SORTABLE",
                     "produktas_id", "NUMERIC", "SORTABLE"
+                });
+
+                await EnsureIndexAsync(target.RedisDb, IdxUzsakymoEilute, new object[]
+                {
+                    IdxUzsakymoEilute, "ON", "HASH", "PREFIX", "1", "uzsakymo_eilute:",
+                    "SCHEMA",
+                    "uzsakymo_eilute_id", "NUMERIC", "SORTABLE",
+                    "restorano_uzsakymas_id", "NUMERIC", "SORTABLE",
+                    "inventorius_id", "NUMERIC", "SORTABLE",
+                    "produktas_id", "NUMERIC", "SORTABLE"
+                });
+
+                await EnsureIndexAsync(target.RedisDb, IdxRestoranoUzsakymas, new object[]
+                {
+                    IdxRestoranoUzsakymas, "ON", "HASH", "PREFIX", "1", "restorano_uzsakymas:",
+                    "SCHEMA",
+                    "restorano_uzsakymas_id", "NUMERIC", "SORTABLE",
+                    "tiekejas_id", "NUMERIC", "SORTABLE"
                 });
             }
         }

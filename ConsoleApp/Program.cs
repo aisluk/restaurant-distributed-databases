@@ -39,6 +39,8 @@ namespace ConsoleApp
 
             var queryService = new GlobalQueryService(router);
             var insertService = new GlobalInsertService(router);
+            var updateService = new GlobalUpdateService(router);
+            var deleteService = new GlobalDeleteService(router);
 
             if (args.Length > 0 && args[0].Equals("--demo", StringComparison.OrdinalIgnoreCase))
             {
@@ -47,7 +49,7 @@ namespace ConsoleApp
             }
             if (args.Length > 0 && args[0].Equals("--test-all", StringComparison.OrdinalIgnoreCase))
             {
-                await RunTestAllAsync(router, queryService, insertService);
+                await RunTestAllAsync(router, queryService, insertService, updateService, deleteService);
                 return;
             }
 
@@ -215,6 +217,212 @@ namespace ConsoleApp
                                     city, restId, porcijaId, qty, tableNumber: table, phone: phone, simulateM1Failure: simFail);
                                 break;
                             }
+                        case "6":
+                        case "edit-restaurant":
+                            {
+                                Console.Write("Miestas (Kaunas / Vilnius): ");
+                                string? cityIn = Console.ReadLine();
+                                if (!ShardRouter.TryParseCity(cityIn, out var city))
+                                {
+                                    Console.WriteLine("Klaida: tokio miesto sistemoje nėra (galimi tik 'Kaunas' arba 'Vilnius').");
+                                    break;
+                                }
+                                Console.Write("Restoranas ID (> 0): ");
+                                if (!int.TryParse(Console.ReadLine(), out int restId) || restId <= 0)
+                                {
+                                    Console.WriteLine("Klaida: restoranas_id turi būti teigiamas sveikasis skaičius (> 0).");
+                                    break;
+                                }
+                                var current = await updateService.GetRestaurantAsync(city, restId);
+                                if (current is null)
+                                {
+                                    Console.WriteLine($"Klaida: restoranas su restoranas_id={restId} neegzistuoja {city} fragmente.");
+                                    break;
+                                }
+
+                                Console.WriteLine($"Dabartiniai duomenys (vietove='{current.Vietove}' neredaguojama): pavadinimas='{current.Pavadinimas}', telefonas='{current.Telefonas ?? "-"}', svetaine='{current.Svetaine ?? "-"}'");
+                                Console.Write($"Naujas pavadinimas [Enter = palikti '{current.Pavadinimas}']: ");
+                                string? nameIn = Console.ReadLine();
+                                string newName = string.IsNullOrWhiteSpace(nameIn) ? current.Pavadinimas : nameIn.Trim();
+
+                                Console.Write($"Naujas telefonas [Enter = palikti '{current.Telefonas ?? "-"}', '-' = išvalyti]: ");
+                                string? newPhone = ResolveOptionalEdit(Console.ReadLine(), current.Telefonas);
+
+                                Console.Write($"Nauja svetainė [Enter = palikti '{current.Svetaine ?? "-"}', '-' = išvalyti]: ");
+                                string? newWebsite = ResolveOptionalEdit(Console.ReadLine(), current.Svetaine);
+
+                                Console.Write("Imituoti M2 gedimą ir Saga kompensaciją? (y/N): ");
+                                bool simFail = string.Equals(Console.ReadLine()?.Trim(), "y", StringComparison.OrdinalIgnoreCase);
+
+                                await updateService.UpdateRestaurantAsync(
+                                    city, restId, newName, newPhone, newWebsite, simulateM2Failure: simFail);
+                                break;
+                            }
+                        case "7":
+                        case "edit-employee":
+                            {
+                                Console.Write("Dabartinis darbuotojo miestas (Kaunas / Vilnius): ");
+                                string? srcCityIn = Console.ReadLine();
+                                if (!ShardRouter.TryParseCity(srcCityIn, out var srcCity))
+                                {
+                                    Console.WriteLine("Klaida: tokio miesto sistemoje nėra (galimi tik 'Kaunas' arba 'Vilnius').");
+                                    break;
+                                }
+                                Console.Write("Darbuotojas ID (> 0): ");
+                                if (!int.TryParse(Console.ReadLine(), out int empId) || empId <= 0)
+                                {
+                                    Console.WriteLine("Klaida: darbuotojas_id turi būti teigiamas sveikasis skaičius (> 0).");
+                                    break;
+                                }
+                                var current = await updateService.GetEmployeeAsync(srcCity, empId);
+                                if (current is null)
+                                {
+                                    Console.WriteLine($"Klaida: darbuotojas su darbuotojas_id={empId} neegzistuoja {srcCity} fragmente.");
+                                    break;
+                                }
+
+                                Console.WriteLine($"Dabartiniai duomenys: vardas='{current.Vardas}', pavardė='{current.Pavarde}', pareiga='{current.Pareiga}', atostogauja={current.Atostogauja}, telefonas='{current.Telefonas}', el_pastas='{current.ElPastas}', restoranas=({srcCity}, {current.RestoranasId})");
+
+                                Console.Write($"Naujas vardas [Enter = palikti '{current.Vardas}']: ");
+                                string? vardasIn = Console.ReadLine();
+                                string newVardas = string.IsNullOrWhiteSpace(vardasIn) ? current.Vardas : vardasIn.Trim();
+
+                                Console.Write($"Nauja pavardė [Enter = palikti '{current.Pavarde}']: ");
+                                string? pavardeIn = Console.ReadLine();
+                                string newPavarde = string.IsNullOrWhiteSpace(pavardeIn) ? current.Pavarde : pavardeIn.Trim();
+
+                                Console.Write($"Nauja pareiga [Enter = palikti '{current.Pareiga}']: ");
+                                string? pareigaIn = Console.ReadLine();
+                                string newPareiga = string.IsNullOrWhiteSpace(pareigaIn) ? current.Pareiga : pareigaIn.Trim();
+
+                                Console.Write($"Atostogauja? (y/n) [Enter = palikti {(current.Atostogauja ? "y" : "n")}]: ");
+                                string? atostIn = Console.ReadLine()?.Trim();
+                                bool newAtost = current.Atostogauja;
+                                if (!string.IsNullOrWhiteSpace(atostIn))
+                                {
+                                    if (atostIn.Equals("y", StringComparison.OrdinalIgnoreCase) || atostIn.Equals("true", StringComparison.OrdinalIgnoreCase))
+                                        newAtost = true;
+                                    else if (atostIn.Equals("n", StringComparison.OrdinalIgnoreCase) || atostIn.Equals("false", StringComparison.OrdinalIgnoreCase))
+                                        newAtost = false;
+                                    else
+                                    {
+                                        Console.WriteLine("Klaida: įveskite 'y' arba 'n'.");
+                                        break;
+                                    }
+                                }
+
+                                Console.Write($"Naujas telefonas [Enter = palikti '{current.Telefonas}']: ");
+                                string? telIn = Console.ReadLine();
+                                string newTel = string.IsNullOrWhiteSpace(telIn) ? current.Telefonas : telIn.Trim();
+
+                                Console.Write($"Naujas el. paštas [Enter = palikti '{current.ElPastas}']: ");
+                                string? emailIn = Console.ReadLine();
+                                string newEmail = string.IsNullOrWhiteSpace(emailIn) ? current.ElPastas : emailIn.Trim();
+
+                                Console.Write($"Naujas restorano miestas (Kaunas / Vilnius) [Enter = palikti '{srcCity}']: ");
+                                string? dstCityIn = Console.ReadLine();
+                                CityFragment dstCity = srcCity;
+                                if (!string.IsNullOrWhiteSpace(dstCityIn) && !ShardRouter.TryParseCity(dstCityIn, out dstCity))
+                                {
+                                    Console.WriteLine("Klaida: tokio miesto sistemoje nėra (galimi tik 'Kaunas' arba 'Vilnius').");
+                                    break;
+                                }
+
+                                int newRestId;
+                                if (dstCity != srcCity)
+                                {
+                                    Console.Write($"Naujas restoranas_id {dstCity} fragmente (> 0): ");
+                                    if (!int.TryParse(Console.ReadLine(), out newRestId) || newRestId <= 0)
+                                    {
+                                        Console.WriteLine("Klaida: restoranas_id turi būti teigiamas sveikasis skaičius (> 0).");
+                                        break;
+                                    }
+                                }
+                                else
+                                {
+                                    Console.Write($"Naujas restoranas_id [Enter = palikti {current.RestoranasId}]: ");
+                                    string? restIdIn = Console.ReadLine();
+                                    newRestId = current.RestoranasId;
+                                    if (!string.IsNullOrWhiteSpace(restIdIn))
+                                    {
+                                        if (!int.TryParse(restIdIn, out newRestId) || newRestId <= 0)
+                                        {
+                                            Console.WriteLine("Klaida: restoranas_id turi būti teigiamas sveikasis skaičius (> 0).");
+                                            break;
+                                        }
+                                    }
+                                }
+
+                                bool simFail = false;
+                                if (dstCity != srcCity)
+                                {
+                                    Console.Write("Imituoti pradinio M1 gedimą ir Saga kompensaciją? (y/N): ");
+                                    simFail = string.Equals(Console.ReadLine()?.Trim(), "y", StringComparison.OrdinalIgnoreCase);
+                                }
+
+                                await updateService.UpdateEmployeeAsync(
+                                    srcCity, empId, newVardas, newPavarde, newPareiga, newAtost, newTel, newEmail,
+                                    dstCity, newRestId, simulateSourceDeleteFailure: simFail);
+                                break;
+                            }
+                        case "8":
+                        case "delete-restaurant":
+                            {
+                                Console.Write("Miestas (Kaunas / Vilnius): ");
+                                string? cityIn = Console.ReadLine();
+                                if (!ShardRouter.TryParseCity(cityIn, out var city))
+                                {
+                                    Console.WriteLine("Klaida: tokio miesto sistemoje nėra (galimi tik 'Kaunas' arba 'Vilnius').");
+                                    break;
+                                }
+                                Console.Write("Restoranas ID (> 0): ");
+                                if (!int.TryParse(Console.ReadLine(), out int restId) || restId <= 0)
+                                {
+                                    Console.WriteLine("Klaida: restoranas_id turi būti teigiamas sveikasis skaičius (> 0).");
+                                    break;
+                                }
+                                Console.Write("Ar tikrai norite ištrinti restoraną ir visus jo našlaičiais likusius įrašus? (y/N): ");
+                                if (!string.Equals(Console.ReadLine()?.Trim(), "y", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    Console.WriteLine("Šalinimas atšauktas.");
+                                    break;
+                                }
+                                Console.Write("Imituoti M1 gedimą ir M2 atstatymą? (y/N): ");
+                                bool simFail = string.Equals(Console.ReadLine()?.Trim(), "y", StringComparison.OrdinalIgnoreCase);
+
+                                await deleteService.DeleteRestaurantCascadeAsync(
+                                    city, restId, simulateM1Failure: simFail);
+                                break;
+                            }
+                        case "9":
+                        case "delete-recipe":
+                            {
+                                Console.Write("Miestas (Kaunas / Vilnius): ");
+                                string? cityIn = Console.ReadLine();
+                                if (!ShardRouter.TryParseCity(cityIn, out var city))
+                                {
+                                    Console.WriteLine("Klaida: tokio miesto sistemoje nėra (galimi tik 'Kaunas' arba 'Vilnius').");
+                                    break;
+                                }
+                                Console.Write("Receptas ID (> 0): ");
+                                if (!int.TryParse(Console.ReadLine(), out int recId) || recId <= 0)
+                                {
+                                    Console.WriteLine("Klaida: receptas_id turi būti teigiamas sveikasis skaičius (> 0).");
+                                    break;
+                                }
+                                Console.Write("Ar tikrai norite ištrinti receptą, jo porcijas ir naudojamus produktus? (y/N): ");
+                                if (!string.Equals(Console.ReadLine()?.Trim(), "y", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    Console.WriteLine("Šalinimas atšauktas.");
+                                    break;
+                                }
+                                Console.Write("Imituoti M1 gedimą ir M2 atstatymą? (y/N): ");
+                                bool simFail = string.Equals(Console.ReadLine()?.Trim(), "y", StringComparison.OrdinalIgnoreCase);
+
+                                await deleteService.DeleteRecipeCascadeAsync(
+                                    city, recId, simulateM1Failure: simFail);
+                                break;
+                            }
                         case "0":
                         case "Exit":
                         case "exit":
@@ -250,6 +458,14 @@ namespace ConsoleApp
             return false;
         }
 
+        private static string? ResolveOptionalEdit(string? input, string? current)
+        {
+            if (string.IsNullOrWhiteSpace(input))
+                return current;
+            string trimmed = input.Trim();
+            return trimmed == "-" ? null : trimmed;
+        }
+
         private static void PrintMenu()
         {
             Console.WriteLine("------------------------------------------------------------");
@@ -258,6 +474,10 @@ namespace ConsoleApp
             Console.WriteLine("3 | search-inventory    - Globalus SELECT: inventoriaus paieška (RediSearch FT.SEARCH + M1)");
             Console.WriteLine("4 | insert-restaurant   - Globalus INSERT: restoranas (M1) + inventorius (M2) su Saga/TTL");
             Console.WriteLine("5 | insert-order        - Globalus INSERT: kliento užsakymas (M1) + atsargų nurašymas (M2 Lua)");
+            Console.WriteLine("6 | edit-restaurant     - Globalus UPDATE: restorano redagavimas (M1 + M2) su Saga/TTL");
+            Console.WriteLine("7 | edit-employee       - Globalus UPDATE: darbuotojo redagavimas / perkėlimas tarp Kaunas ir Vilnius");
+            Console.WriteLine("8 | delete-restaurant   - Globalus DELETE: restorano ir našlaičių šalinimas (M1 + M2) su Saga/TTL");
+            Console.WriteLine("9 | delete-recipe       - Globalus DELETE: recepto, porcijų ir naudojamų produktų šalinimas (M1 + M2)");
             Console.WriteLine("0 | Exit                - Baigti darbą");
             Console.WriteLine("------------------------------------------------------------");
         }
@@ -298,7 +518,7 @@ namespace ConsoleApp
         }
 
         private static async Task RunTestAllAsync(
-            ShardRouter router, GlobalQueryService queryService, GlobalInsertService insertService)
+            ShardRouter router, GlobalQueryService queryService, GlobalInsertService insertService, GlobalUpdateService updateService, GlobalDeleteService deleteService)
         {
             await RunDemoAsync(queryService, insertService);
 
@@ -350,6 +570,74 @@ namespace ConsoleApp
             if (createdOrderId.HasValue)
             {
                 await queryService.SelectOrderWithIngredientsAsync(CityFragment.Kaunas, createdOrderId.Value);
+            }
+
+            if (createdRestId.HasValue)
+            {
+                Console.WriteLine("\n=== TEST 5: UPDATE Restoranas (Vilnius: M2 gedimas -> Saga kompensacija, po to sėkmingas UPDATE) ===");
+                bool compUpdateOk = await updateService.UpdateRestaurantAsync(
+                    CityFragment.Vilnius, createdRestId.Value, "Neturi Išlikti", "+37060000000", null,
+                    idempotencyKey: "test-rest-upd-fail-1", simulateM2Failure: true);
+                var afterComp = await updateService.GetRestaurantAsync(CityFragment.Vilnius, createdRestId.Value);
+                Console.WriteLine($"Po kompensacijos (tikimasi false / 'Test Bistro Vilnius'): ok={compUpdateOk}, pavadinimas='{afterComp?.Pavadinimas}'");
+
+                bool updateOk = await updateService.UpdateRestaurantAsync(
+                    CityFragment.Vilnius, createdRestId.Value, "Test Bistro Vilnius Atnaujintas", "+37069933333", null,
+                    idempotencyKey: "test-rest-upd-ok-1", simulateM2Failure: false);
+                var afterUpdate = await updateService.GetRestaurantAsync(CityFragment.Vilnius, createdRestId.Value);
+                var vTarget = router.GetTarget(CityFragment.Vilnius);
+                var redisName = await vTarget.RedisDb.HashGetAsync($"restoranas:{createdRestId.Value}", "pavadinimas");
+                var redisWebExists = await vTarget.RedisDb.HashExistsAsync($"restoranas:{createdRestId.Value}", "svetaine");
+                Console.WriteLine($"Po sėkmingo UPDATE: ok={updateOk}, M1='{afterUpdate?.Pavadinimas}', M2='{redisName}', svetaine išvalyta={!redisWebExists}");
+                await vTarget.RedisDb.KeyDeleteAsync("tx:idemp:rest-upd:Vilnius:test-rest-upd-ok-1");
+            }
+
+            Console.WriteLine("\n=== TEST 6: UPDATE Darbuotojas (perkėlimas Kaunas -> Vilnius su Saga kompensacija ir grąžinimu) ===");
+            var empBefore = await updateService.GetEmployeeAsync(CityFragment.Kaunas, 1);
+            if (empBefore is not null)
+            {
+                int? failedMove = await updateService.UpdateEmployeeAsync(
+                    CityFragment.Kaunas, 1, empBefore.Vardas, empBefore.Pavarde, empBefore.Pareiga,
+                    empBefore.Atostogauja, empBefore.Telefonas, empBefore.ElPastas,
+                    CityFragment.Vilnius, 46, idempotencyKey: "test-emp-move-fail-1", simulateSourceDeleteFailure: true);
+                var stillInKaunas = await updateService.GetEmployeeAsync(CityFragment.Kaunas, 1);
+                Console.WriteLine($"Po kompensacijos (tikimasi null ir išlikimo Kaune): moved={failedMove?.ToString() ?? "null"}, Kaunas={stillInKaunas is not null}");
+
+                int? movedEmpId = await updateService.UpdateEmployeeAsync(
+                    CityFragment.Kaunas, 1, empBefore.Vardas, empBefore.Pavarde, "Vyr. padavėjas",
+                    empBefore.Atostogauja, empBefore.Telefonas, empBefore.ElPastas,
+                    CityFragment.Vilnius, 46, idempotencyKey: "test-emp-move-ok-1", simulateSourceDeleteFailure: false);
+                var inKaunasAfter = await updateService.GetEmployeeAsync(CityFragment.Kaunas, 1);
+                var inVilniusAfter = movedEmpId.HasValue ? await updateService.GetEmployeeAsync(CityFragment.Vilnius, movedEmpId.Value) : null;
+                Console.WriteLine($"Po perkėlimo į Vilnių: newId={movedEmpId}, Kaunas={inKaunasAfter is not null}, Vilnius={inVilniusAfter is not null} (restoranas_id={inVilniusAfter?.RestoranasId})");
+
+                if (movedEmpId.HasValue)
+                {
+                    await updateService.UpdateEmployeeAsync(
+                        CityFragment.Vilnius, movedEmpId.Value, empBefore.Vardas, empBefore.Pavarde, empBefore.Pareiga,
+                        empBefore.Atostogauja, empBefore.Telefonas, empBefore.ElPastas,
+                        CityFragment.Kaunas, empBefore.RestoranasId, idempotencyKey: "test-emp-move-back-1", simulateSourceDeleteFailure: false);
+                }
+                await kaunasTarget.RedisDb.KeyDeleteAsync("tx:idemp:emp-move:Kaunas:Vilnius:test-emp-move-ok-1");
+                var vTargetCleanup = router.GetTarget(CityFragment.Vilnius);
+                await vTargetCleanup.RedisDb.KeyDeleteAsync("tx:idemp:emp-move:Vilnius:Kaunas:test-emp-move-back-1");
+            }
+
+            if (createdRestId.HasValue)
+            {
+                Console.WriteLine("\n=== TEST 7: DELETE Restoranas (imituotas M1 gedimas -> M2 atstatymas, po to kaskadinis šalinimas) ===");
+                bool compDelOk = await deleteService.DeleteRestaurantCascadeAsync(
+                    CityFragment.Vilnius, createdRestId.Value, idempotencyKey: "test-rest-del-fail-1", simulateM1Failure: true);
+                var vTargetDel = router.GetTarget(CityFragment.Vilnius);
+                bool stillInRedis = await vTargetDel.RedisDb.KeyExistsAsync($"restoranas:{createdRestId.Value}");
+                Console.WriteLine($"Po M2 kompensacijos (tikimasi false ir true): ok={compDelOk}, M2 egzistuoja={stillInRedis}");
+
+                bool delOk = await deleteService.DeleteRestaurantCascadeAsync(
+                    CityFragment.Vilnius, createdRestId.Value, idempotencyKey: "test-rest-del-ok-1", simulateM1Failure: false);
+                bool goneInRedis = !await vTargetDel.RedisDb.KeyExistsAsync($"restoranas:{createdRestId.Value}");
+                bool goneInMysql = !await router.RestaurantExistsInCityAsync(CityFragment.Vilnius, createdRestId.Value);
+                Console.WriteLine($"Po kaskadinio šalinimo: ok={delOk}, M2 ištrinta={goneInRedis}, M1 ištrinta={goneInMysql}");
+                await vTargetDel.RedisDb.KeyDeleteAsync("tx:idemp:rest-del:Vilnius:test-rest-del-ok-1");
             }
 
             // Cleanup test records so initial dataset remains clean
