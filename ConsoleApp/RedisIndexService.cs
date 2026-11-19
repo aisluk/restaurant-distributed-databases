@@ -98,7 +98,40 @@ namespace ConsoleApp
             catch (RedisServerException ex) when (ex.Message.Contains("Unknown index name", StringComparison.OrdinalIgnoreCase))
             {
                 await db.ExecuteAsync("FT.CREATE", createArgs);
+                for (int i = 0; i < 40; i++)
+                {
+                    var info = await db.ExecuteAsync("FT.INFO", indexName);
+                    if (IsIndexingComplete(info))
+                        break;
+                    await Task.Delay(25);
+                }
             }
+        }
+
+        private static bool IsIndexingComplete(RedisResult info)
+        {
+            if (info.IsNull)
+                return false;
+
+            if (info.Resp3Type == ResultType.Map)
+            {
+                var map = info.ToDictionary();
+                if (map.TryGetValue("indexing", out var val))
+                    return val.ToString() == "0";
+                return true;
+            }
+
+            if (info.Resp2Type == ResultType.Array)
+            {
+                var arr = (RedisResult[])info!;
+                for (int i = 0; i + 1 < arr.Length; i += 2)
+                {
+                    if (string.Equals(arr[i].ToString(), "indexing", StringComparison.OrdinalIgnoreCase))
+                        return arr[i + 1].ToString() == "0";
+                }
+            }
+
+            return true;
         }
 
         /// <summary>

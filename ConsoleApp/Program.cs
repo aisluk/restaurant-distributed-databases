@@ -41,15 +41,22 @@ namespace ConsoleApp
             var insertService = new GlobalInsertService(router);
             var updateService = new GlobalUpdateService(router);
             var deleteService = new GlobalDeleteService(router);
+            var diagnosticsService = new DiagnosticsService(router);
 
             if (args.Length > 0 && args[0].Equals("--demo", StringComparison.OrdinalIgnoreCase))
             {
                 await RunDemoAsync(queryService, insertService);
                 return;
             }
+            if (args.Length > 0 && args[0].Equals("--benchmark", StringComparison.OrdinalIgnoreCase))
+            {
+                await diagnosticsService.VerifyIntegrityAsync();
+                await diagnosticsService.RunPerformanceBenchmarkAsync(queryService, insertService);
+                return;
+            }
             if (args.Length > 0 && args[0].Equals("--test-all", StringComparison.OrdinalIgnoreCase))
             {
-                await RunTestAllAsync(router, queryService, insertService, updateService, deleteService);
+                await RunTestAllAsync(router, queryService, insertService, updateService, deleteService, diagnosticsService);
                 return;
             }
 
@@ -423,6 +430,14 @@ namespace ConsoleApp
                                     city, recId, simulateM1Failure: simFail);
                                 break;
                             }
+                        case "10":
+                        case "verify-integrity":
+                            await diagnosticsService.VerifyIntegrityAsync();
+                            break;
+                        case "11":
+                        case "benchmark":
+                            await diagnosticsService.RunPerformanceBenchmarkAsync(queryService, insertService);
+                            break;
                         case "0":
                         case "Exit":
                         case "exit":
@@ -478,6 +493,8 @@ namespace ConsoleApp
             Console.WriteLine("7 | edit-employee       - Globalus UPDATE: darbuotojo redagavimas / perkėlimas tarp Kaunas ir Vilnius");
             Console.WriteLine("8 | delete-restaurant   - Globalus DELETE: restorano ir našlaičių šalinimas (M1 + M2) su Saga/TTL");
             Console.WriteLine("9 | delete-recipe       - Globalus DELETE: recepto, porcijų ir naudojamų produktų šalinimas (M1 + M2)");
+            Console.WriteLine("10| verify-integrity    - Globalus vientisumo patikrinimas (M1 MySQL <-> M2 Redis, Kaunas ir Vilnius)");
+            Console.WriteLine("11| benchmark           - Našumo matavimas su testiniais duomenimis (Pipeline, RediSearch, Scatter-Gather, Saga)");
             Console.WriteLine("0 | Exit                - Baigti darbą");
             Console.WriteLine("------------------------------------------------------------");
         }
@@ -518,8 +535,11 @@ namespace ConsoleApp
         }
 
         private static async Task RunTestAllAsync(
-            ShardRouter router, GlobalQueryService queryService, GlobalInsertService insertService, GlobalUpdateService updateService, GlobalDeleteService deleteService)
+            ShardRouter router, GlobalQueryService queryService, GlobalInsertService insertService, GlobalUpdateService updateService, GlobalDeleteService deleteService, DiagnosticsService diagnosticsService)
         {
+            Console.WriteLine("=== PRADINIS VIENTISUMO PATIKRINIMAS ===");
+            await diagnosticsService.VerifyIntegrityAsync();
+
             await RunDemoAsync(queryService, insertService);
 
             Console.WriteLine("\n=== TEST 1: INSERT Restoranas (imituotas M2 gedimas -> Saga kompensacija) ===");
@@ -640,6 +660,49 @@ namespace ConsoleApp
                 await vTargetDel.RedisDb.KeyDeleteAsync("tx:idemp:rest-del:Vilnius:test-rest-del-ok-1");
             }
 
+            Console.WriteLine("\n=== TEST 8: DELETE Receptas (imituotas M1 gedimas -> M2 atstatymas, po to kaskadinis šalinimas) ===");
+            {
+                var kTargetRec = router.GetTarget(CityFragment.Kaunas);
+                int tempRecId = await router.GetNextCityMySqlIdAsync(CityFragment.Kaunas, "receptas", "receptas_id");
+                int tempPorId = await router.GetNextCityMySqlIdAsync(CityFragment.Kaunas, "porcija", "porcija_id");
+                int tempNpId = await router.GetNextCityRedisIdAsync(CityFragment.Kaunas, RedisIndexService.IdxNaudojamasProduktas, "naudojamas_produktas_id");
+
+                await using (var conn = new MySqlConnection(kTargetRec.MySqlConnString))
+                {
+                    await conn.OpenAsync();
+                    await using var recCmd = new MySqlCommand(
+                        "INSERT INTO receptas (receptas_id, pavadinimas, instrukcija, dieta_id) VALUES (@rid, 'Test Receptas Šalinimui', NULL, 1);", conn);
+                    recCmd.Parameters.AddWithValue("@rid", tempRecId);
+                    await recCmd.ExecuteNonQueryAsync();
+
+                    await using var porCmd = new MySqlCommand(
+                        "INSERT INTO porcija (porcija_id, kaina, porcijos_dydis_id, receptas_id) VALUES (@pid, 8.50, 2, @rid);", conn);
+                    porCmd.Parameters.AddWithValue("@pid", tempPorId);
+                    porCmd.Parameters.AddWithValue("@rid", tempRecId);
+                    await porCmd.ExecuteNonQueryAsync();
+                }
+
+                await kTargetRec.RedisDb.HashSetAsync($"naudojamas_produktas:{tempNpId}", new HashEntry[]
+                {
+                    new("naudojamas_produktas_id", tempNpId),
+                    new("kiekis", "0.250"),
+                    new("receptas_id", tempRecId),
+                    new("produktas_id", 1)
+                });
+
+                bool compRecOk = await deleteService.DeleteRecipeCascadeAsync(
+                    CityFragment.Kaunas, tempRecId, idempotencyKey: "test-rec-del-fail-1", simulateM1Failure: true);
+                bool npRestoredInM2 = await kTargetRec.RedisDb.KeyExistsAsync($"naudojamas_produktas:{tempNpId}");
+                Console.WriteLine($"Po M2 kompensacijos (tikimasi false ir true): ok={compRecOk}, M2 naudojamas_produktas atstatytas={npRestoredInM2}");
+
+                bool delRecOk = await deleteService.DeleteRecipeCascadeAsync(
+                    CityFragment.Kaunas, tempRecId, idempotencyKey: "test-rec-del-ok-1", simulateM1Failure: false);
+                bool npGoneInM2 = !await kTargetRec.RedisDb.KeyExistsAsync($"naudojamas_produktas:{tempNpId}");
+                bool prodKeptInM2 = await kTargetRec.RedisDb.KeyExistsAsync("produktas:1");
+                Console.WriteLine($"Po recepto kaskadinio šalinimo: ok={delRecOk}, M2 naudojamas_produktas ištrintas={npGoneInM2}, M2 produktas:1 išsaugotas={prodKeptInM2}");
+                await kTargetRec.RedisDb.KeyDeleteAsync("tx:idemp:rec-del:Kaunas:test-rec-del-ok-1");
+            }
+
             // Cleanup test records so initial dataset remains clean
             Console.WriteLine("\n=== CLEANUP: Testinių įrašų išvalymas ===");
             if (createdRestId.HasValue)
@@ -689,6 +752,11 @@ namespace ConsoleApp
                 await kaunasTarget.RedisDb.KeyDeleteAsync("tx:idemp:order:Kaunas:test-ord-ok-1");
             }
             Console.WriteLine("Testiniai įrašai išvalyti, duomenų bazės grąžintos į pradinę būseną.");
+
+            Console.WriteLine("\n=== GALUTINIS VIENTISUMO PATIKRINIMAS PO TESTŲ IR VALYMO ===");
+            await diagnosticsService.VerifyIntegrityAsync();
+
+            await diagnosticsService.RunPerformanceBenchmarkAsync(queryService, insertService);
         }
     }
 }
